@@ -1,1 +1,32 @@
-{"name":"eduction","version":"1.0.0","main":"App.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1","start":"npm start"},"keywords":[],"author":"","license":"ISC","description":"","dependencies":{"bcrypt":"^5.1.1","bcryptjs":"^3.0.2","body-parser":"^1.20.3","connect-mongo":"^5.1.0","cookie-parser":"^1.4.7","crypto":"^1.0.1","dotenv":"^16.5.0","ejs":"^3.1.10","express":"^4.21.2","express-flash":"^0.0.2","express-session":"^1.18.1","gsap":"^3.12.7","jsonwebtoken":"^9.0.2","mongoose":"^8.15.0","multer":"^1.4.5-lts.1","nodemailer":"^6.10.0","razorpay":"^2.9.6"}}
+{
+  "name": "education",
+  "version": "1.0.0",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node App.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.20.3",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.7",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.18.1",
+    "gsap": "^3.12.7",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.10.0",
+    "razorpay": "^2.9.6"
+  }
+}
