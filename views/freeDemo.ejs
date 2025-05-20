@@ -1,0 +1,748 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Demo Videos - Software Education Coaching</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Admission.css">
+    <link rel="stylesheet" href="/css/Home.css">
+    <style>
+        :root {
+            --primary: #ff6b35;
+            --secondary: #2b2d42;
+            --text-dark: #333;
+            --text-light: #666;
+            --white: #fff;
+            --bg-light: #f8f8f8;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .page-container {
+            min-height: 100vh;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(43, 45, 66, 0.9), rgba(43, 45, 66, 0.9)),
+                        url('https://source.unsplash.com/1600x400/?coding,technology') center/cover;
+            padding: 6.4rem 2rem;
+            color: var(--white);
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            animation: fadeInDown 0.5s ease;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            /* margin-bottom: 1rem; */
+            font-weight: 700;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        .breadcrumb a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary);
+        }
+
+        .main-content {
+            max-width: 1300px;
+            margin: -50px auto 0;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content-section {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .section-header h2 {
+            color: var(--secondary);
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        .section-header h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background-color: var(--primary);
+        }
+
+        .section-header p {
+            color: var(--text-light);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+
+        /* Search Container Styles */
+.search-container {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#search-input {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+    border-color: var(--secondary, #007bff);
+}
+        /* Video Grid Styles */
+       /* Video Grid Styles */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 2rem; /* Space between cards */
+    margin-top: 2rem;
+}
+
+.video-grid > div {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+}
+
+.video-grid > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.video-grid h2 {
+    background: var(--secondary);
+    color: var(--white);
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0;
+    flex-shrink: 0; /* Prevent title from shrinking */
+}
+
+.video-grid p {
+    padding: 1.5rem;
+    margin-bottom: 0;
+    color: var(--text-light);
+    flex-grow: 1; /* Allow description to grow and fill space */
+}
+
+.video-grid video {
+    width: 100%;
+    height: 200px; /* Fixed height for videos */
+    object-fit: cover; /* Ensure video fills the container */
+    display: block;
+}
+
+        /* Features Section */
+        .features-section {
+            padding: 4rem 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--bg-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: var(--primary);
+            font-size: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-card h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 4rem 0;
+        }
+
+        .testimonials-slider {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .testimonial-slide {
+            display: none;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .testimonial-slide.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .testimonial-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
+            border: 4px solid var(--primary);
+        }
+
+        .testimonial-content {
+            font-style: italic;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .testimonial-role {
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .testimonial-rating {
+            color: gold;
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+
+        .slider-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .slider-nav button {
+            background: none;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider-nav button:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(rgba(43, 45, 66, 0.9), rgba(43, 45, 66, 0.9)),
+                        url('https://source.unsplash.com/1600x400/?classroom,education') center/cover;
+            padding: 4rem 2rem;
+            text-align: center;
+            color: var(--white);
+            margin: 4rem 0;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-content p {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .cta-btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .primary-btn {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .primary-btn:hover {
+            background: #e55a2a;
+            transform: translateY(-3px);
+        }
+
+        .secondary-btn {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .secondary-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--secondary);
+            color: var(--white);
+            padding: 4rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .footer-column h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--primary);
+        }
+
+        .footer-column ul {
+            list-style: none;
+        }
+
+        .footer-column li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-column a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-column a:hover {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #aaa;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .video-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero-content p {
+                font-size: 1rem;
+            }
+            
+            .main-content {
+                padding: 0 1rem;
+                margin-top: -30px;
+            }
+            
+            .content-section {
+                padding: 1.5rem;
+            }
+            
+            .section-header h2 {
+                font-size: 1.8rem;
+            }
+            
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-content h2 {
+                font-size: 2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .cta-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <%- include("partials/Header") %>
+    <div class="page-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Free Demo Videos</h1>
+                <p>Explore our high-quality software education tutorials and decide if our coaching is right for you</p>
+                <div class="breadcrumb">
+                    <a href="#">Home</a> / <a href="#">Courses</a> / Free Demo Videos
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Introduction Section -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Why Choose Our Software Education Coaching?</h2>
+                    <p>We provide comprehensive training in programming, web development, data science, and more with a focus on practical skills and industry-relevant knowledge.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📚</div>
+                        <h3>Comprehensive Curriculum</h3>
+                        <p>Our courses cover everything from fundamentals to advanced concepts with structured learning paths.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">👨‍💻</div>
+                        <h3>Expert Instructors</h3>
+                        <p>Learn from industry professionals with years of real-world experience and teaching expertise.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🔄</div>
+                        <h3>Hands-on Projects</h3>
+                        <p>Apply your knowledge through practical projects that simulate real-world scenarios.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">🌐</div>
+                        <h3>Flexible Learning</h3>
+                        <p>Access course materials anytime, anywhere with our online learning platform.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Available Demo Videos</h2>
+                    <p>Get a taste of our teaching style and course content with these free demo videos</p>
+                </div>
+            
+                <!-- Search Input -->
+                <div class="search-container">
+                    <input
+                        type="text"
+                        id="search-input"
+                        placeholder="Search by title or description..."
+                        oninput="filterVideos()"
+                    />
+                </div>
+         
+                <div class="video-grid">
+                    <!-- Check if videos exists and has data -->
+                    <% if (videos && videos.length > 0) { %>
+                        <!-- Loop through each video -->
+                        <% videos.forEach((video, index) => { %>
+                            <div class="video-card" data-title="<%= video.examType.toLowerCase() %>" data-description="<%= video.description.toLowerCase() %>">
+                                <h2 class="video-title"><%= video.examType %></h2>
+                                <p class="video-description"><%= video.description %></p>
+                                <video class="video-player" width="320" height="240" controls>
+                                    <source src="<%= video.videoPath %>" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <!-- Add a delete button -->
+                            </div>
+                        <% }) %>
+                    <% } else { %>
+                        <!-- Display a message if no videos are available -->
+                        <p class="no-videos-message">No videos available.</p>
+                    <% } %>
+                </div>
+            </section>
+            <!-- Testimonials Section -->
+            <section class="content-section">
+                <div class="section-header">
+                    <h2>Student Testimonials</h2>
+                    <p>Hear what our students have to say about their learning experience</p>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonial-slide active">
+                        <img src="data:image/jpeg;base64,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" alt="Student Avatar" class="testimonial-avatar">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-content">"Our courses completely transformed my career. The instructors were incredibly knowledgeable and supportive, and the hands-on projects gave me real-world experience that I could showcase in my portfolio. Within two months of completing the course, I landed a job as a junior developer!"</p>
+                        <p class="testimonial-author"></p>
+                        <p class="testimonial-role">GMAT at TechCorp</p>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <img src="data:image/jpeg;base64,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" alt="Student Avatar" class="testimonial-avatar">
+                        <div class="testimonial-rating">★★★★★</div>
+                        <p class="testimonial-content">"I had tried several online courses before, but none of them provided the depth and clarity that this program offered. The step-by-step approach to teaching complex programming concepts made learning enjoyable and accessible. The support from instructors and the community was exceptional!"</p>
+                        <p class="testimonial-author">Sarah Williams</p>
+                        <p class="testimonial-role">Software Engineer at InnovateTech</p>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <img src="data:image/jpeg;base64,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" alt="Student Avatar" class="testimonial-avatar">
+                        <div class="testimonial-rating">★★★★☆</div>
+                        <p class="testimonial-content">"As someone with no prior programming experience, I was worried about keeping up with the course. However, the curriculum was designed so well that I could follow along easily. The practical exercises reinforced my learning, and I'm now confident in my coding abilities. This course exceeded my expectations!"</p>
+                        <p class="testimonial-author">Kritika Nagar</p>
+                        <p class="testimonial-role">GMAT at StartupX</p>
+                    </div>
+                </div>
+                
+                <div class="slider-nav">
+                    <button id="prevBtn">←</button>
+                    <button id="nextBtn">→</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Start Your Learning Journey?</h2>
+                <p>Enroll in our comprehensive software education courses and take the first step toward a successful tech career.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="cta-btn primary-btn">Enroll Now</a>
+                    <a href="#" class="cta-btn secondary-btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <%- include('partials/Footer') %> 
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- JavaScript for Testimonial Slider -->
+    <script>
+        // Testimonial Slider Functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + slides.length) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }
+
+        prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+        nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+
+        // Auto-rotate testimonials
+        setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 5000);
+
+
+        function filterVideos() {
+    // Get the search input value
+    const searchQuery = document.getElementById("search-input").value.toLowerCase();
+
+    // Get all video cards
+    const videoCards = document.querySelectorAll(".video-card");
+
+    // Loop through each video card
+    videoCards.forEach(card => {
+        // Get the title and description from the data attributes
+        const title = card.getAttribute("data-title");
+        const description = card.getAttribute("data-description");
+
+        // Check if the title or description includes the search query
+        if (title.includes(searchQuery) || description.includes(searchQuery)) {
+            card.style.display = "block"; // Show the card
+        } else {
+            card.style.display = "none"; // Hide the card
+        }
+    });
+}
+</script>
+
+<script src="../js/Home.js"></script>
+</body>
+</html>

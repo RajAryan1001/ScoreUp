@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Exam Pattern</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Home.css">
+    <link rel="stylesheet" href="/css/CBSE/11th.css">
+</head>
+<body>
+    <%- include('../../partials/Header') %>
+  
+    <div class="page-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>CBSE and NCERT Resources</h1>
+                <div class="breadcrumb">
+                    <a href="#">Home</a> / <a href="#">Class 11</a> / <span>CBSE & NCERT</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <!-- Left Content -->
+                <div class="content-left">
+                    <div class="content-section">
+                        <h2>About CBSE and NCERT</h2>
+                        <p>The Central Board of Secondary Education (CBSE) is a national level board of education in India for public and private schools, controlled and managed by the Union Government of India. CBSE conducts the final examinations for Class 10 and Class 12 every year in the month of March.</p>
+                        <p>The National Council of Educational Research and Training (NCERT) is an autonomous organization of the Government of India which was established in 1961 as a literary, scientific and charitable Society under the Societies' Registration Act (Act XXI of 1860).</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2>Class 11 Subjects</h2>
+                        <div class="highlight-box">
+                            <ul>
+                                <li>Physics</li>
+                                <li>Chemistry</li>
+                                <li>Mathematics</li>
+                                <li>Biology</li>
+                                <li>Accountancy</li>
+                                <li>Business Studies</li>
+                                <li>Economics</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2>NCERT Books</h2>
+                        <p>The NCERT textbooks for the 11th grade are designed to provide comprehensive coverage of the syllabus in a simple and easy-to-understand language. The textbooks are supplemented with a variety of exercises and activities to reinforce the concepts learned in the classroom.</p>
+                    </div>
+                </div>
+
+                <!-- Right Content (Form) -->
+                <div class="content-right">
+                    <form class="enquiry-form" id="enquiryForm" action="/submit-cbseTest" method="POST">
+                        <h3>Planning to study abroad?</h3>
+                        <p>Get free 1-on-1 counselling with our experts</p>
+            
+                        <div class="form-group">
+                            <input type="text" id="firstName" name="firstName" required>
+                            <label for="firstName">First Name</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="text" id="lastName" name="lastName" required>
+                            <label for="lastName">Last Name</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                            <label for="mobile">Mobile No. (10 digits)</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <select id="program" name="program" required>
+                                <option value="">Select Program</option>
+                                <option value="GMAT">GMAT</option>
+                                <option value="GRE">GRE</option>
+                                <option value="IELTS">IELTS</option>
+                            </select>
+                            <label for="program">Select Program</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="mode" name="mode" required>
+                                <option value="">Select Mode</option>
+                                <option value="Classroom">Classroom Coaching</option>
+                                <option value="Online">Online Coaching</option>
+                            </select>
+                            <label for="mode">Select Mode</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <select id="city" name="city" required>
+                                <option value="">Select City</option>
+                                <option value="Noida">Noida</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Gurgaon">Gurgaon</option>
+                            </select>
+                            <label for="city">Select City</label>
+                        </div>
+            
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="authorize" name="authorize" required>
+                            <label for="authorize">I authorize Manya - The Princeton Review to contact me even if my number is registered with DND to assist with my enquiry and get regular updates through SMS/Whatsapp.</label>
+                        </div>
+            
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- Back to Top Button -->
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <%- include('../../partials/Footer') %>
+    <script src="/js/Home.js"></script>
+    <script src="/js/CBSE/11th.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</body>
+</html>

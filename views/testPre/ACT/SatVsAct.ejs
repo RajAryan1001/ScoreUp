@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAT vs ACT FAQ’s</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/Home.css">
+  <link rel="stylesheet" href="/css/ACT/SatVsAct.css">
+</head>
+<body>
+
+    <%-include('../../partials/Header') %>
+    <div class="page-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+          <div class="hero-content">
+            <h1>SAT vs ACT</h1>
+            <div class="breadcrumb">
+              <a href="#">Home</a> / <a href="#">Digital SAT Exam</a> / <span>SAT vs ACT FAQ’s</span>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Main Content -->
+        <main class="main-content">
+          <div class="content-wrapper">
+            <!-- Left Content (Text) -->
+            <div class="content-left">
+              <!-- Which exam is better? -->
+              <section class="content-section">
+                <h2>Which exam, the ACT or the SAT, is better suited to Indian students?</h2>
+                <p>Neither test is ‘easier’ than the other! Some students land up with substantially higher scores on the SAT; others do better on the ACT. At Manya-The Princeton Review, we believe that just knowing the differences between the two tests is not enough to figure out which test to take. A student’s strengths and challenges in specific content areas are more relevant factors to determine which test is better suited for them.</p>
+              </section>
+    
+              <!-- Key Differences -->
+              <section class="content-section">
+                <h2>Key Differences Between ACT and SAT</h2>
+                <div class="highlight-box">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Aspect</th>
+                        <th>ACT</th>
+                        <th>SAT</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Format</td>
+                        <td>Computer-based</td>
+                        <td>Paper-based</td>
+                      </tr>
+                      <tr>
+                        <td>Frequency</td>
+                        <td>6 testing windows</td>
+                        <td>4 testing days</td>
+                      </tr>
+                      <tr>
+                        <td>Math</td>
+                        <td>Straightforward questions</td>
+                        <td>Tricky, wordy questions</td>
+                      </tr>
+                      <tr>
+                        <td>Science</td>
+                        <td>Includes Science section</td>
+                        <td>No Science section</td>
+                      tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+    
+              <!-- Other Countries -->
+              <section class="content-section">
+                <h2>Which other countries accept the scores of these tests?</h2>
+                <p>Whether a particular country accepts both SAT and ACT scores depends on the program, specialization, and university and cannot be generalized in all cases (except in the case of the US). Undergraduate applicants must make it a point to thoroughly peruse a particular university’s requirements to find out whether both the tests are accepted or only SAT or ACT scores are accepted. For instance, the University of Oxford accepts both ACT and SAT scores, while NUS Singapore requires SAT and SAT Subject test scores from candidates who have studied Class XII from a Board other than CBSE and ICSE.</p>
+              </section>
+    
+              <!-- Equal Importance -->
+              <section class="content-section">
+                <h2>Do colleges and universities abroad give equal importance to the ACT and the SAT?</h2>
+                <p>Since 2007, all 4-year colleges in the US accept either ACT or SAT scores, and no college in the US declares a preference for either test. For the last three years, the number of ACT test takers has surpassed the number of SAT test takers. Applicants should attempt the test on which they are confident of performing better.</p>
+              </section>
+    
+              <!-- Advantages and Disadvantages -->
+              <section class="content-section">
+                <h2>What are the advantages and disadvantages of these two tests, especially for Indian students?</h2>
+                <p>The obvious advantage of taking either test is that students can apply to undergraduate schools abroad and widen their undergrad education opportunities. There is no real disadvantage in taking either test. The important consideration here is to assess which test the student is more likely to score better on. If a student is not comfortable with either the test format or content of the ACT or SAT, then this will certainly become a disadvantage for them. Manya-The Princeton Review recommends that students evaluate some test format differences that can impact their scores.</p>
+              </section>
+    
+              <!-- Confused Students -->
+              <section class="content-section">
+                <h2>Most Indian students tend to get confused between the two tests. What would be your advice to these students?</h2>
+                <p>It is not advisable to prepare for both the tests! The SAT and the ACT require different strategies and preparation. In order to assess which test a student is likely to do better on, Manya-The Princeton Review offers a free assessment (known as The Princeton Review StartUp Test) to all students. It is a seven-part practice exam that includes over three hours of questions divided between the SAT and the ACT. Scoring charts show how students can expect to do on the ACT or the SAT, and those results can guide students in selecting the exam on which they are most likely to get a better score!</p>
+              </section>
+            </div>
+    
+            <!-- Right Content (Form) -->
+            <div class="content-right">
+                <form class="enquiry-form" id="enquiryForm" action="/submit-actTest" method="POST">
+                    <h3>Planning to study abroad?</h3>
+                    <p>Get free 1-on-1 counselling with our experts</p>
+        
+                    <div class="form-group">
+                        <input type="text" id="firstName" name="firstName" required>
+                        <label for="firstName">First Name</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="text" id="lastName" name="lastName" required>
+                        <label for="lastName">Last Name</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                        <label for="mobile">Mobile No. (10 digits)</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <select id="program" name="program" required>
+                            <option value="">Select Program</option>
+                            <option value="GMAT">GMAT</option>
+                            <option value="GRE">GRE</option>
+                            <option value="IELTS">IELTS</option>
+                        </select>
+                        <label for="program">Select Program</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="mode" name="mode" required>
+                            <option value="">Select Mode</option>
+                            <option value="Classroom">Classroom Coaching</option>
+                            <option value="Online">Online Coaching</option>
+                        </select>
+                        <label for="mode">Select Mode</label>
+                    </div>
+        
+                    <div class="form-group">
+                        <select id="city" name="city" required>
+                            <option value="">Select City</option>
+                            <option value="Noida">Noida</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Gurgaon">Gurgaon</option>
+                        </select>
+                        <label for="city">Select City</label>
+                    </div>
+        
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="authorize" name="authorize" required>
+                        <label for="authorize">I authorize Manya - The Princeton Review to contact me even if my number is registered with DND to assist with my enquiry and get regular updates through SMS/Whatsapp.</label>
+                    </div>
+        
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    
+      <!-- Back to Top Button -->
+      <div class="back-to-top" onclick="scrollToTop()">&#8593;</div>
+  
+  <%- include('../../partials/Footer') %>
+   
+<script src="/js/Home.js"></script>
+<script src="/js/ACT/SatVsAct.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</body>
+</html>

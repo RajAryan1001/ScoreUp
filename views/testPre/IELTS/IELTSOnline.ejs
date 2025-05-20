@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IELTS Online Prep Courses</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/Home.css">
+  <link rel="stylesheet" href="/css/IELTS/IELTSOnline.css">
+</head>
+<body>
+
+    <%- include('../../partials/Header') %>
+  <div class="page-container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>IELTS Online Prep Courses</h1>
+        <div class="breadcrumb">
+          <a href="#">Home</a> / <a href="#">IELTS Exam</a> / <span>IELTS Online Prep Courses</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-wrapper">
+        <!-- Left Content (Text) -->
+        <div class="content-left">
+          <!-- What We Offer -->
+          <section class="content-section">
+            <h2>What We Offer</h2>
+            <p>Thousands of students in India and other countries choose Manya’s IELTS online coaching because of our well-known preparation materials, well-organized courses, and highly trained and accredited IELTS trainers, making it an ideal choice for those considering study abroad.</p>
+            <p>Our course material is the outcome of the rigorous research by our R&D team based in the United States. With the standardized material, a plethora of practice questions on the student portal, full-length practice tests, customized study plan, and comprehensive score reports, you can rest assured that you are at the right place with the right people to guide you. We’re committed to providing 100% satisfaction and helping you achieve your target scores.</p>
+          </section>
+
+          <!-- Live Online Program Features -->
+          <section class="content-section">
+            <h2>Live Online Program Features</h2>
+            <ul>
+              <li>Accessible from anywhere, anytime</li>
+              <li>Cambridge Powered content</li>
+              <li>A comprehensive IELTS program</li>
+              <li>Trainer-led teaching and practice</li>
+              <li>Dedicated practice for Reading, Writing, Listening, and Speaking</li>
+              <li>Diagnostic and Mock tests for systematic evaluation</li>
+              <li>Self-assessment methodology</li>
+            </ul>
+          </section>
+
+          <!-- IELTS Classroom Training – Live Online -->
+          <section class="content-section">
+            <h2>IELTS Classroom Training – Live Online</h2>
+            <p>Manya – The Princeton Review’s IELTS Live Online program brings to you the teaching expertise at the click of a mouse! Our experienced instructors and world-class training material ensure you not only master the IELTS exam but also gain mastery over the English Language.</p>
+            <a href="#" class="know-more-btn">Read More</a>
+          </section>
+
+          <!-- IELTS Private Tutoring -->
+          <section class="content-section">
+            <h2>IELTS Private Tutoring</h2>
+            <p>Manya – The Princeton Review’s IELTS Private Tutoring prep program is the best solution for those who need extra hand-holding and undivided attention. It is extremely beneficial to those who want to get IELTS personalized coaching, are interested in IELTS course duration, or don’t find batch-based learning suitable.</p>
+          </section>
+
+          <!-- IELTS Self Paced -->
+          <section class="content-section">
+            <h2>IELTS Self Paced</h2>
+            <p>The Manya IELTS self-paced program is an intensive 3-month IELTS program specially designed for IELTS aspirants who want to practice for the IELTS exam at the comfort of their own convenience. Get access to 5 full-length mock tests to replicate the IELTS exam.</p>
+          </section>
+        </div>
+
+        <!-- Right Content (Form) -->
+        <div class="content-right">
+            <form class="enquiry-form" id="enquiryForm" action="/submit-ieltsTest" method="POST">
+                <h3>Planning to study abroad?</h3>
+                <p>Get free 1-on-1 counselling with our experts</p>
+    
+                <div class="form-group">
+                    <input type="text" id="firstName" name="firstName" required>
+                    <label for="firstName">First Name</label>
+                </div>
+    
+                <div class="form-group">
+                    <input type="text" id="lastName" name="lastName" required>
+                    <label for="lastName">Last Name</label>
+                </div>
+    
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+    
+                <div class="form-group">
+                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                    <label for="mobile">Mobile No. (10 digits)</label>
+                </div>
+    
+                <div class="form-group">
+                    <select id="program" name="program" required>
+                        <option value="">Select Program</option>
+                        <option value="GMAT">GMAT</option>
+                        <option value="GRE">GRE</option>
+                        <option value="IELTS">IELTS</option>
+                    </select>
+                    <label for="program">Select Program</label>
+                </div>
+                <div class="form-group">
+                    <select id="mode" name="mode" required>
+                        <option value="">Select Mode</option>
+                        <option value="Classroom">Classroom Coaching</option>
+                        <option value="Online">Online Coaching</option>
+                    </select>
+                    <label for="mode">Select Mode</label>
+                </div>
+    
+                <div class="form-group">
+                    <select id="city" name="city" required>
+                        <option value="">Select City</option>
+                        <option value="Noida">Noida</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Gurgaon">Gurgaon</option>
+                    </select>
+                    <label for="city">Select City</label>
+                </div>
+    
+                <div class="checkbox-group">
+                    <input type="checkbox" id="authorize" name="authorize" required>
+                    <label for="authorize">I authorize Manya - The Princeton Review to contact me even if my number is registered with DND to assist with my enquiry and get regular updates through SMS/Whatsapp.</label>
+                </div>
+    
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+      </div>
+    </main>
+  </div>
+
+ <!-- IELTS Student Testimonials -->
+<section class="testimonials-section">
+    <h2>IELTS Student Testimonials</h2>
+    <div class="testimonials-container">
+      <button class="scroll-btn prev" onclick="scrollTestimonials(-1)">&#10094;</button>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-left">
+            <img src="https://via.placeholder.com/100" alt="Mehak Chopra">
+            <h3>Mehak Chopra</h3>
+            <p>IELTS: 7.5/9</p>
+            <p>Manya ID: CHD192004E0026</p>
+          </div>
+          <div class="testimonial-right">
+            <p>Being a student at Manya-The Princeton Review has been a great privilege for me, and I am really grateful for the support of the faculty members. The faculty at Manya was always there for me and mentored my success in the IELTS Exam. I would like to thank my teachers for being supportive throughout and helping me to bring out the best in me!</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-left">
+            <img src="https://via.placeholder.com/100" alt="Rahul Sharma">
+            <h3>Rahul Sharma</h3>
+            <p>IELTS: 8.0/9</p>
+            <p>Manya ID: DEL192004E0034</p>
+          </div>
+          <div class="testimonial-right">
+            <p>Manya-The Princeton Review provided me with the best resources and guidance to achieve my desired IELTS score. The mock tests and personalized feedback were extremely helpful. I highly recommend Manya to anyone preparing for IELTS!</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-left">
+            <img src="https://via.placeholder.com/100" alt="Priya Singh">
+            <h3>Priya Singh</h3>
+            <p>IELTS: 7.0/9</p>
+            <p>Manya ID: MUM192004E0056</p>
+          </div>
+          <div class="testimonial-right">
+            <p>The trainers at Manya are very experienced and supportive. They helped me improve my weak areas and gave me the confidence to perform well in the IELTS exam. Thank you, Manya!</p>
+          </div>
+        </div>
+      </div>
+      <button class="scroll-btn next" onclick="scrollTestimonials(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top" onclick="scrollToTop()">&#8593;</div>
+
+   <!-- JavaScript -->
+   <%- include('../../partials/Footer.ejs') %>
+
+   <script src="/js/Home.js"></script>
+   <script src="/js/IELTS/IELTSOnline.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScoreUp- Software Coaching Institute</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Home.css"> 
+</head>
+<body>
+    <!-- Header Section -->
+
+     <%- include('partials/Header') %>
+
+    <!-- Hero Section with Text and Image Slider -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="animate-text">Unlock Your Potential</h1>
+                <h2 class="animate-text delay-1">Achieve Your Academic Goals</h2>
+                <p class="animate-text delay-2">TechGenius provides comprehensive preparation for international standardized tests including GRE, GMAT, SAT, TOEFL, IELTS, AP, ACT, PTE, and academic tutoring for CBSE/NCERT, IGCSE & IB curricula.</p>
+                <div class="hero-buttons animate-text delay-3">
+                    <a href="/courses" class="btn btn-primary">Explore Courses</a>
+                    <a href="/freeDemo" class="btn btn-secondary">Free Demo Class</a>
+                </div>
+            </div>
+            <div class="hero-slider">
+                <div class="slider-container">
+                    <div class="slide active">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZWR1Y2F0aW9ufGVufDB8fDB8fHww" alt="Students studying">
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZWR1Y2F0aW9ufGVufDB8fDB8fHww" alt="Classroom environment">
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZWR1Y2F0aW9ufGVufDB8fDB8fHww" alt="Online learning">
+                    </div>
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZWR1Y2F0aW9ufGVufDB8fDB8fHww" alt="Test preparation">
+                    </div>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Courses Section -->
+    <section class="courses-section">
+        <div class="section-header">
+            <h2>OUR COURSES</h2>
+            <p>Comprehensive preparation for all major standardized tests</p>
+        </div>
+
+        <div class="search-filter-container">
+            <div class="search-box">
+                <input type="text" id="course-search" placeholder="Search courses...">
+                <button type="button" id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-options">
+                <select id="course-filter">
+                    <option value="all">All Courses</option>
+                    <option value="gre">GRE</option>
+                    <option value="gmat">GMAT</option>
+                    <option value="sat">SAT</option>
+                    <option value="toefl">TOEFL</option>
+                    <option value="ielts">IELTS</option>
+                    <option value="ap">AP</option>
+                    <option value="act">ACT</option>
+                    <option value="pte">PTE</option>
+                    <option value="cbse">CBSE/NCERT</option>
+                    <option value="igcse">IGCSE & IB</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="courses-grid">
+            <!-- GRE Course Card -->
+            <div class="course-card" data-category="gre">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="GRE Preparation">
+                </div>
+                <div class="course-content">
+                    <h3>GRE Preparation</h3>
+                    <p>Comprehensive preparation for Graduate Record Examination with focus on Verbal, Quantitative, and Analytical Writing.</p>
+                    <div class="course-features">
+                        <span><i class="fas fa-clock"></i> 12 Weeks</span>
+                        <span><i class="fas fa-book"></i> Full Material</span>
+                        <span><i class="fas fa-laptop"></i> Online/Offline</span>
+                    </div>
+                    <a href="/greOption" class="btn btn-course">Learn More</a>
+                </div>
+            </div>
+
+            <!-- GMAT Course Card -->
+            <div class="course-card" data-category="gmat">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="GMAT Preparation">
+                </div>
+                <div class="course-content">
+                    <h3>GMAT Preparation</h3>
+                    <p>Expert coaching for Graduate Management Admission Test covering Verbal, Quantitative, Integrated Reasoning, and Analytical Writing.</p>
+                    <div class="course-features">
+                        <span><i class="fas fa-clock"></i> 10 Weeks</span>
+                        <span><i class="fas fa-book"></i> Full Material</span>
+                        <span><i class="fas fa-laptop"></i> Online/Offline</span>
+                    </div>
+                    <a href="/gmatOption" class="btn btn-course">Learn More</a>
+                </div>
+            </div>
+
+            <!-- SAT Course Card -->
+            <div class="course-card" data-category="sat">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="SAT Preparation">
+                </div>
+                <div class="course-content">
+                    <h3>SAT Preparation</h3>
+                    <p>Comprehensive SAT preparation focusing on Reading, Writing & Language, and Mathematics sections.</p>
+                    <div class="course-features">
+                        <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                        <span><i class="fas fa-book"></i> Full Material</span>
+                        <span><i class="fas fa-laptop"></i> Online/Offline</span>
+                    </div>
+                    <a href="/satPre" class="btn btn-course">Learn More</a>
+                </div>
+            </div>
+
+            <!-- TOEFL Course Card -->
+            <div class="course-card" data-category="toefl">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="TOEFL Preparation">
+                </div>
+                <div class="course-content">
+                    <h3>TOEFL Preparation</h3>
+                    <p>Intensive coaching for Test of English as a Foreign Language covering Reading, Listening, Speaking, and Writing.</p>
+                    <div class="course-features">
+                        <span><i class="fas fa-clock"></i> 6 Weeks</span>
+                        <span><i class="fas fa-book"></i> Full Material</span>
+                        <span><i class="fas fa-laptop"></i> Online/Offline</span>
+                    </div>
+                    <a href="/toeflPrep" class="btn btn-course">Learn More</a>
+                </div>
+            </div>
+
+            <!-- IELTS Course Card -->
+            <div class="course-card" data-category="ielts">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="IELTS Preparation">
+                </div>
+                <div class="course-content">
+                    <h3>IELTS Preparation</h3>
+                    <p>Comprehensive preparation for International English Language Testing System with focus on all four modules.</p>
+                    <div class="course-features">
+                        <span><i class="fas fa-clock"></i> 6 Weeks</span>
+                        <span><i class="fas fa-book"></i> Full Material</span>
+                        <span><i class="fas fa-laptop"></i> Online/Offline</span>
+                    </div>
+                    <a href="/ieltspre" class="btn btn-course">Learn More</a>
+                </div>
+            </div>
+
+            <!-- AP Course Card -->
+            <div class="course-card" data-category="ap">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="AP Courses">
+                </div>
+                <div class="course-content">
+                    <h3>AP Courses</h3>
+                    <p>Expert coaching for Advanced Placement exams in various subjects including Calculus, Physics, Chemistry, and more.</p>
+                    <div class="course-features">
+                        <span><i class="fas fa-clock"></i> Varies</span>
+                        <span><i class="fas fa-book"></i> Full Material</span>
+                        <span><i class="fas fa-laptop"></i> Online/Offline</span>
+                    </div>
+                    <a href="/apPre" class="btn btn-course">Learn More</a>
+                </div>
+            </div>
+
+            <!-- ACT Course Card -->
+            <div class="course-card" data-category="act">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="ACT Preparation">
+                </div>
+                <div class="course-content">
+                    <h3>ACT Preparation</h3>
+                    <p>Comprehensive preparation for ACT covering English, Mathematics, Reading, Science, and optional Writing.</p>
+                    <div class="course-features">
+                        <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                        <span><i class="fas fa-book"></i> Full Material</span>
+                        <span><i class="fas fa-laptop"></i> Online/Offline</span>
+                    </div>
+                    <a href="/actpre" class="btn btn-course">Learn More</a>
+                </div>
+            </div>
+
+            <!-- PTE Course Card -->
+            <div class="course-card" data-category="pte">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="PTE Preparation">
+                </div>
+                <div class="course-content">
+                    <h3>PTE Preparation</h3>
+                    <p>Expert coaching for Pearson Test of English covering all sections with focus on scoring techniques.</p>
+                    <div class="course-features">
+                        <span><i class="fas fa-clock"></i> 6 Weeks</span>
+                        <span><i class="fas fa-book"></i> Full Material</span>
+                        <span><i class="fas fa-laptop"></i> Online/Offline</span>
+                    </div>
+                    <a href="/ptePre" class="btn btn-course">Learn More</a>
+                </div>
+            </div>
+
+            <!-- CBSE/NCERT Course Card -->
+            <div class="course-card" data-category="cbse">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1422&q=80" alt="CBSE/NCERT Tutoring">
+                </div>
+                <div class="course-content">
+                    <h3>CBSE/NCERT Tutoring</h3>
+                    <p>Comprehensive tutoring for CBSE/NCERT curriculum for classes 10th, 11th, and 12th in all subjects.</p>
+                    <div class="course-features">
+                        <span><i class="fas fa-clock"></i> Full Academic Year</span>
+                        <span><i class="fas fa-book"></i> Full Material</span>
+                        <span><i class="fas fa-laptop"></i> Online/Offline</span>
+                    </div>
+                    <a href="/10th" class="btn btn-course">Learn More</a>
+                </div>
+            </div>
+
+            <!-- IGCSE & IB Course Card -->
+            <div class="course-card" data-category="igcse">
+                <div class="course-image">
+                    <img src="https://media.istockphoto.com/id/1352606416/photo/young-woman-working-at-home-stock-photo.webp?a=1&b=1&s=612x612&w=0&k=20&c=_coyrIdsF1SFgWKuHE_HBswk7gyTUnZp3Edzek0gYY4=" alt="IGCSE & IB Tutoring">
+                </div>
+                <div class="course-content">
+                    <h3>IGCSE & IB Tutoring</h3>
+                    <p>Expert tutoring for International General Certificate of Secondary Education and International Baccalaureate curricula.</p>
+                    <div class="course-features">
+                        <span><i class="fas fa-clock"></i> Full Academic Year</span>
+                        <span><i class="fas fa-book"></i> Full Material</span>
+                        <span><i class="fas fa-laptop"></i> Online/Offline</span>
+                    </div>
+                    <a href="/igcse&ibt" class="btn btn-course">Learn More</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="igcse">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="IGCSE & IB Tutoring">
+                </div>
+                <div class="course-content">
+                    <h3>IGCSE & IB Tutoring</h3>
+                    <p>Expert tutoring for International General Certificate of Secondary Education and International Baccalaureate curricula.</p>
+                    <div class="course-features">
+                        <span><i class="fas fa-clock"></i> Full Academic Year</span>
+                        <span><i class="fas fa-book"></i> Full Material</span>
+                        <span><i class="fas fa-laptop"></i> Online/Offline</span>
+                    </div>
+                    <a href="/igcse&ibt" class="btn btn-course">Learn More</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="igcse">
+                <div class="course-image">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="IGCSE & IB Tutoring">
+                </div>
+                <div class="course-content">
+                    <h3>IGCSE & IB Tutoring</h3>
+                    <p>Expert tutoring for International General Certificate of Secondary Education and International Baccalaureate curricula.</p>
+                    <div class="course-features">
+                        <span><i class="fas fa-clock"></i> Full Academic Year</span>
+                        <span><i class="fas fa-book"></i> Full Material</span>
+                        <span><i class="fas fa-laptop"></i> Online/Offline</span>
+                    </div>
+                    <a href="/igcse&ibt" class="btn btn-course">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="section-header">
+            <h2>STUDENT TESTIMONIALS</h2>
+            <p>What our students say about us</p>
+        </div>
+
+        <div class="testimonials-container">
+            <button class="testimonial-nav prev-btn"><i class="fas fa-chevron-left"></i></button>
+            
+            <div class="testimonials-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card active">
+                    <div class="testimonial-image">
+                        <img src="https://media.istockphoto.com/id/1352606416/photo/young-woman-working-at-home-stock-photo.webp?a=1&b=1&s=612x612&w=0&k=20&c=_coyrIdsF1SFgWKuHE_HBswk7gyTUnZp3Edzek0gYY4=" alt="Student 1">
+                    </div>
+                    <div class="testimonial-content">
+                        <h3>Priya Sharma</h3>
+                        <p class="student-course">GRE Preparation</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The GRE preparation at TechGenius was exceptional. The instructors were knowledgeable and provided personalized attention. I scored 328 in my GRE, which helped me secure admission to my dream university."</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://media.istockphoto.com/id/1352606416/photo/young-woman-working-at-home-stock-photo.webp?a=1&b=1&s=612x612&w=0&k=20&c=_coyrIdsF1SFgWKuHE_HBswk7gyTUnZp3Edzek0gYY4=" alt="Student 2">
+                    </div>
+                    <div class="testimonial-content">
+                        <h3>Rahul Verma</h3>
+                        <p class="student-course">GMAT Preparation</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"TechGenius helped me achieve a GMAT score of 720. The practice tests and personalized feedback were invaluable. The instructors were always available to clear my doubts. Highly recommended!"</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://media.istockphoto.com/id/1352606416/photo/young-woman-working-at-home-stock-photo.webp?a=1&b=1&s=612x612&w=0&k=20&c=_coyrIdsF1SFgWKuHE_HBswk7gyTUnZp3Edzek0gYY4=" alt="Student 3">
+                    </div>
+                    <div class="testimonial-content">
+                        <h3>Aisha Khan</h3>
+                        <p class="student-course">IELTS Preparation</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I was struggling with the speaking and writing sections of IELTS. The instructors at TechGenius provided targeted practice and feedback that helped me improve significantly. I scored an overall band of 8.0!"</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-image">
+                        <img src="https://media.istockphoto.com/id/1352606416/photo/young-woman-working-at-home-stock-photo.webp?a=1&b=1&s=612x612&w=0&k=20&c=_coyrIdsF1SFgWKuHE_HBswk7gyTUnZp3Edzek0gYY4=" alt="Student 4">
+                    </div>
+                    <div class="testimonial-content">
+                        <h3>Arjun Patel</h3>
+                        <p class="student-course">SAT Preparation</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The SAT preparation at TechGenius was comprehensive and focused. The practice materials and mock tests were very similar to the actual test. I scored 1520, which exceeded my expectations!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="testimonial-nav next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="testimonial-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item">
+                <i class="fas fa-user-graduate"></i>
+                <div class="stat-count" data-count="5000">0</div>
+                <p>Students Trained</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <div class="stat-count" data-count="50">0</div>
+                <p>Expert Instructors</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-trophy"></i>
+                <div class="stat-count" data-count="95">0</div>
+                <p>Success Rate (%)</p>
+            </div>
+            <div class="stat-item">
+                <i class="fas fa-globe"></i>
+                <div class="stat-count" data-count="100">0</div>
+                <p>Top Universities</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2>Ready to Start Your Journey?</h2>
+            <p>Book a free demo class today and experience our teaching methodology</p>
+            <div class="cta-buttons">
+                <a href="/freeDemo" class="btn btn-primary">Book Free Demo</a>
+                <a href="/contact&about" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <%- include('partials/Footer') %>
+
+    <!-- GSAP and ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="/js/Home.js"></script>
+</body>
+</html>
+

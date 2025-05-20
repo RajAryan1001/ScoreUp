@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAT Practice Test</title>
+  <link rel="stylesheet" href="/css/Home.css">
+  <link rel="stylesheet" href="/css/SAT/satPractice.css">
+</head>
+<body>
+
+    <%- include('../../partials/Header') %> 
+  <div class="page-container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>SAT Practice Test</h1>
+        <div class="breadcrumb">
+          <a href="#">Home</a> / <a href="#">SAT Exam</a> / <span>SAT Practice Test</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="content-wrapper">
+        <!-- Left Content (SAT Practice Test Details) -->
+        <div class="content-left">
+          <div class="content-section">
+            <h2>What is the SAT?</h2>
+            <p>The SAT, or Scholastic Assessment Test, is a standardized exam taken by high school students applying to college, especially in countries like the US, Canada, and the UK. Designed by the College Board, the SAT measures students’ skills in writing, math, and verbal reasoning.</p>
+            <p>The SAT recently shifted from its traditional paper-based format to a digital, computer-adaptive test that adjusts the difficulty level of questions based on responses. This new format takes 2 hours and 14 minutes to complete, with a 10-minute break, and there is no penalty for incorrect or skipped answers.</p>
+          </div>
+
+          <div class="content-section">
+            <h2>Online SAT Practice Tests</h2>
+            <p>Taking a practice test for the SAT is just as crucial as the actual exam. With intense competition for college admissions, every step counts toward your dream university. A full-length practice test offers invaluable insights for those new to the digital SAT.</p>
+            <p>Start preparing with the official Bluebook app from College Board—select “Practice and Prepare” on the homepage for two effective ways to get started:</p>
+            <ul>
+              <li><strong>Test Preview:</strong> This option provides a short set of questions to give you a sense of the digital testing environment. You’ll be able to try out the tools, though you won’t get scores or feedback on your answers.</li>
+              <li><strong>Full-Length Practice:</strong> Bluebook also offers full-length practice tests timed like the SAT. Once completed, your scores will appear in the “My Practice” section, helping you track your progress.</li>
+            </ul>
+            <p>In addition to these official tests, you can try other SAT mock exams, such as the Manya SAT model test, to get extra practice before your exam. Here’s how you can try Manya SAT practice tests:</p>
+            <ol>
+              <li>Start by navigating to the Manya Group website.</li>
+              <li>Select the option for the Student Dashboard.</li>
+              <li>Sign up for your complimentary Manya SAT account.</li>
+              <li>Locate and click on the SAT section.</li>
+              <li>Get ready to start the model test!</li>
+            </ol>
+          </div>
+
+          <div class="content-section">
+            <h2>What are the Major Features of the SAT Exam?</h2>
+            <p>The digital SAT has two main sections: Reading and Writing and Math. You have 64 minutes to complete the reading and writing section, while the Math section is slightly longer at 70 minutes. Thus, the total test time is 2 hours and 14 minutes.</p>
+            <p>Each section is divided into two modules of equal length. Between these two main sections, there’s also a 10-minute break.</p>
+            <p>The first module presents you with a range of questions in each section, from easy to challenging. Your performance on this initial set determines the difficulty level of questions in the second module. If you do well, the next module’s questions may be more challenging.</p>
+
+            <!-- SAT Exam Details Table -->
+            <div class="highlight-box">
+              <h3>SAT Exam Structure</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Sections</th>
+                    <th>Time Allotted (minutes)</th>
+                    <th>Number of Questions/Tasks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Reading and Writing</td>
+                    <td>64 (two 32-minute modules)</td>
+                    <td>54</td>
+                  </tr>
+                  <tr>
+                    <td>Math</td>
+                    <td>70 (two 35-minute modules)</td>
+                    <td>44</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>134</strong></td>
+                    <td><strong>98</strong></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content (Form) -->
+        <div class="content-right">
+          <form class="enquiry-form" id="enquiryForm" action="/submit-satTest" method="POST">
+              <h3>Planning to study abroad?</h3>
+              <p>Get free 1-on-1 counselling with our experts</p>
+  
+              <div class="form-group">
+                  <input type="text" id="firstName" name="firstName" required>
+                  <label for="firstName">First Name</label>
+              </div>
+  
+              <div class="form-group">
+                  <input type="text" id="lastName" name="lastName" required>
+                  <label for="lastName">Last Name</label>
+              </div>
+  
+              <div class="form-group">
+                  <input type="email" id="email" name="email" required>
+                  <label for="email">Email</label>
+              </div>
+  
+              <div class="form-group">
+                  <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                  <label for="mobile">Mobile No. (10 digits)</label>
+              </div>
+  
+              <div class="form-group">
+                  <select id="program" name="program" required>
+                      <option value="">Select Program</option>
+                      <option value="GMAT">GMAT</option>
+                      <option value="GRE">GRE</option>
+                      <option value="IELTS">IELTS</option>
+                  </select>
+                  <label for="program">Select Program</label>
+              </div>
+              <div class="form-group">
+                  <select id="mode" name="mode" required>
+                      <option value="">Select Mode</option>
+                      <option value="Classroom">Classroom Coaching</option>
+                      <option value="Online">Online Coaching</option>
+                  </select>
+                  <label for="mode">Select Mode</label>
+              </div>
+              
+              <div class="form-group">
+                  <select id="city" name="city" required>
+                      <option value="">Select City</option>
+                      <option value="Noida">Noida</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Gurgaon">Gurgaon</option>
+                  </select>
+                  <label for="city">Select City</label>
+              </div>
+  
+              <div class="checkbox-group">
+                  <input type="checkbox" id="authorize" name="authorize" required>
+                  <label for="authorize">I authorize Manya - The Princeton Review to contact me even if my number is registered with DND to assist with my enquiry and get regular updates through SMS/Whatsapp.</label>
+              </div>
+              <button type="submit" class="submit-btn">Submit</button>
+          </form>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- Back to Top Button -->
+  <div class="back-to-top" id="backToTop">↑</div>
+  <%- include('../../partials/Footer') %>
+<script src="/js/Home.js"></script>
+<script src="/js/SAT/satPractice.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</body>
+</html>

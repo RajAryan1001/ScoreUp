@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRE TEST SERIES | Manya Education</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Home.css">
+    <link rel="stylesheet" href="/css/Gre/GreTest.css">
+  
+</head>
+<body>
+    <%- include('../../partials/Header') %> 
+    <div class="page-container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>GRE Test Series</h1>
+                <p>Practice tests are one of the most important tools to use if you are preparing for the GRE, but, unfortunately, most of the GRE practice tests available online aren’t of good quality. When you practice with any GRE practice tests that are available online, you can actually end up scoring which may not reflect your actual capability. A good GRE Practice Test is important for you to keep you focused on the actual topics that can help you score well on the GRE.</p>
+            </div>
+        </section>
+
+        <main class="main-content">
+            <div class="content-wrapper">
+                <div class="content-left">
+                    <div class="content-section">
+                        <h2>GRE Test Series Offerings</h2>
+                        <ul>
+                            <li>5 full-length practice tests</li>
+                            <li>Detailed score report for self-analysis</li>
+                            <li>Answers and explanation for each question</li>
+                            <li>6 months validity</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-section">
+                        <h2>Manya GRE Preparation Programs</h2>
+                        <p>Choose from various programs tailored to your needs:</p>
+                        <ul>
+                            <li><strong>GRE Classroom Training:</strong> A batch program that will solve the preparation problems of students from both engineering and non-engineering backgrounds.</li>
+                            <li><strong>GRE Quant Private Tutoring:</strong> Personalized 1-on-1 program to improve your areas of focus and boost your strengths.</li>
+                            <li><strong>GRE Verbal Private Tutoring:</strong> Similar to Quant tutoring, focusing on verbal skills.</li>
+                            <li><strong>GRE Blend – Self Paced with Teacher Access:</strong> A self-prep program with access to resources and doubt clearing sessions.</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-section">
+                        <h2>Top GRE Achievers</h2>
+                        <ul>
+                            <li>338 - Vaibhav Guptha, Hyderabad</li>
+                            <li>337 - Sreeharsha Udayashankar, Bengaluru</li>
+                            <li>337 - Vishwanathan Giridhar, Chennai</li>
+                            <li>335 - Ahana Ghosh, New Delhi</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content-right">
+                    <form class="enquiry-form" id="enquiryForm" action="/submit-greTest" method="POST">
+                        <h3>Planning to study abroad?</h3>
+                        <p>Get free 1-on-1 counselling with our experts</p>
+            
+                        <div class="form-group">
+                            <input type="text" id="firstName" name="firstName" required>
+                            <label for="firstName">First Name</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="text" id="lastName" name="lastName" required>
+                            <label for="lastName">Last Name</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                            <label for="mobile">Mobile No. (10 digits)</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <select id="program" name="program" required>
+                                <option value="">Select Program</option>
+                                <option value="GMAT">GMAT</option>
+                                <option value="GRE">GRE</option>
+                                <option value="IELTS">IELTS</option>
+                            </select>
+                            <label for="program">Select Program</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <select id="mode" name="mode" required>
+                                <option value="">Select Mode</option>
+                                <option value="Classroom">Classroom Coaching</option>
+                                <option value="Online">Online Coaching</option>
+                            </select>
+                            <label for="mode">Select Mode</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <select id="city" name="city" required>
+                                <option value="">Select City</option>
+                                <option value="Noida">Noida</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Gurgaon">Gurgaon</option>
+                            </select>
+                            <label for="city">Select City</label>
+                        </div>
+            
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="authorize" name="authorize" required>
+                            <label for="authorize">I authorize Manya - The Princeton Review to contact me even if my number is registered with DND to assist with my enquiry and get regular updates through SMS/Whatsapp.</label>
+                        </div>
+            
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <section class="faq-section">
+            <h2>FAQ's</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Why do you need to appear for so many GRE mock tests before the actual GRE?
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Mock tests help you familiarize yourself with the test format and timing, improving your performance on the actual exam.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What are the benefits of the GRE test series?
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The GRE test series provides structured practice, detailed feedback, and helps identify areas for improvement.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        When must you take the mock tests?
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>It is recommended to take mock tests regularly throughout your preparation to track your progress.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Where can we take a free GRE practice test online?
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Many websites offer free GRE practice tests, including official GRE resources and test prep companies.</p>
+                    </div>
+                </div>
+                <!-- Add more FAQ items as needed -->
+            </div>
+        </section>
+    </div>
+
+    <%- include('../../partials/Footer') %>
+       
+<script src="/js/Home.js"></script>
+<!-- <script src="../js/Admission.js"></script> -->
+<script src="/js/Gre/GreTest.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</body>
+</html>

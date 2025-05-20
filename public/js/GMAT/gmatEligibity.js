@@ -1,0 +1,33 @@
+// Back to Top Button
+const backToTop = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTop.classList.add('visible');
+  } else {
+    backToTop.classList.remove('visible');
+  }
+});
+
+backToTop.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// FAQ Toggle
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
+
+// Form Validation
+const enquiryForm = document.getElementById('enquiryForm');
+
+enquiryForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  alert('Form submitted successfully!');
+  enquiryForm.reset();
+});

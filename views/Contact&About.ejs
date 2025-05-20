@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score-Up - Software Coaching Institute</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/Home.css"> 
+    <link rel="stylesheet" href="/css/Admission.css">    
+    <link rel="stylesheet" href="/css/Contact&About.css">   
+
+</head>
+<body>
+    <!-- Header -->
+    
+    <%- include('partials/Header') %>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>About TechGenius</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>About Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="page-container">
+        <div class="main-content">
+            <div class="content-wrapper">
+                <!-- Left Content -->
+                <div class="content-left">
+                    <!-- About Us Section -->
+                    <div class="content-section">
+                        <h2>Our Story</h2>
+                        <p>Founded in 2010, TechGenius has been at the forefront of software education for over a decade. What started as a small coaching center with just 5 students has now grown into one of the most respected software training institutes in the country with over 10,000 successful alumni working in top tech companies worldwide.</p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-text">Years of Excellence</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15,000+</span>
+                                <span class="stat-text">Students Trained</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-text">Placement Rate</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-text">Expert Instructors</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mission & Vision -->
+                    <div class="content-section">
+                        <h2>Our Mission & Vision</h2>
+                        <div class="mission-vision">
+                            <div class="mission-box">
+                                <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                                <p>To empower individuals with cutting-edge technical skills and knowledge that enable them to excel in the ever-evolving software industry and contribute meaningfully to technological advancement.</p>
+                            </div>
+                            <div class="vision-box">
+                                <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                                <p>To be the global leader in software education, recognized for excellence, innovation, and producing industry-ready professionals who drive technological transformation worldwide.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Our Team -->
+                    <div class="content-section">
+                        <h2>Meet Our Expert Team</h2>
+                        <p>Our instructors are industry veterans with years of practical experience in leading tech companies.</p>
+                        
+                        <div class="team-grid">
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="https://source.unsplash.com/300x300/?portrait,man" alt="John Doe">
+                                </div>
+                                <h4>John Doe</h4>
+                                <p class="member-role">Founder & Lead Instructor</p>
+                                <p class="member-bio">Ex-Google developer with 15+ years of experience in software architecture.</p>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="https://source.unsplash.com/300x300/?portrait,woman" alt="Jane Smith">
+                                </div>
+                                <h4>Jane Smith</h4>
+                                <p class="member-role">Senior Instructor - Web Development</p>
+                                <p class="member-bio">Full-stack developer with expertise in React, Node.js, and cloud technologies.</p>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="https://source.unsplash.com/300x300/?portrait,man,indian" alt="Raj Patel">
+                                </div>
+                                <h4>Raj Patel</h4>
+                                <p class="member-role">Senior Instructor - Mobile Development</p>
+                                <p class="member-bio">Mobile app specialist with experience in iOS, Android, and cross-platform frameworks.</p>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="https://source.unsplash.com/300x300/?portrait,woman,asian" alt="Lisa Chen">
+                                </div>
+                                <h4>Lisa Chen</h4>
+                                <p class="member-role">Senior Instructor - Data Science</p>
+                                <p class="member-bio">Data scientist with background in AI, machine learning, and big data analytics.</p>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-medium"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Our Facilities -->
+                    <div class="content-section">
+                        <h2>State-of-the-Art Facilities</h2>
+                        <div class="facilities-grid">
+                            <div class="facility-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <h4>Modern Computer Labs</h4>
+                                <p>High-performance workstations with the latest software and development tools.</p>
+                            </div>
+                            <div class="facility-item">
+                                <i class="fas fa-wifi"></i>
+                                <h4>High-Speed Internet</h4>
+                                <p>Gigabit fiber connection for seamless learning and development.</p>
+                            </div>
+                            <div class="facility-item">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <h4>Smart Classrooms</h4>
+                                <p>Interactive teaching environments with modern audio-visual equipment.</p>
+                            </div>
+                            <div class="facility-item">
+                                <i class="fas fa-book"></i>
+                                <h4>Digital Library</h4>
+                                <p>Access to thousands of e-books, tutorials, and research papers.</p>
+                            </div>
+                            <div class="facility-item">
+                                <i class="fas fa-coffee"></i>
+                                <h4>Student Lounge</h4>
+                                <p>Comfortable spaces for relaxation, collaboration, and networking.</p>
+                            </div>
+                            <div class="facility-item">
+                                <i class="fas fa-project-diagram"></i>
+                                <h4>Project Rooms</h4>
+                                <p>Dedicated spaces for team projects and collaborative work.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonials -->
+                    <div class="content-section">
+                        <h2>What Our Students Say</h2>
+                        <div class="testimonials-container">
+                            <div class="testimonial-slider">
+                                <div class="testimonial-slide active">
+                                    <div class="testimonial">
+                                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                                        <p>TechGenius completely transformed my career. The hands-on training and industry-focused curriculum helped me land a job at a top tech company within a month of completing my course.</p>
+                                        <div class="testimonial-author">
+                                            <img src="data:image/jpeg;base64,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" alt="Michael Johnson">
+                                            <div>
+                                                <h5>Raj Aryan</h5>
+                                                <p>GMAT Topper 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-slide">
+                                    <div class="testimonial">
+                                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                                        <p>The instructors at TechGenius are exceptional. They don't just teach you to code; they mentor you to think like a professional developer and solve real-world problems.</p>
+                                        <div class="testimonial-author">
+                                            <img src="data:image/jpeg;base64,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" alt="Sarah Williams">
+                                            <div>
+                                                <h5>Yash Topper</h5>
+                                                <p>GRE Topper 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-slide">
+                                    <div class="testimonial">
+                                        <div class="quote"><i class="fas fa-quote-left"></i></div>
+                                        <p>As someone who switched careers from marketing to web development, I found TechGenius's approach perfect for beginners. The step-by-step learning path made the transition smooth and enjoyable.</p>
+                                        <div class="testimonial-author">
+                                            <img src="data:image/jpeg;base64,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" alt="David Lee">
+                                            <div>
+                                                <h5>Pratik Sharma</h5>
+                                                <p>GMAT Topper 2025</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-controls">
+                                <button class="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                                <div class="testimonial-dots">
+                                    <span class="dot active" data-slide="0"></span>
+                                    <span class="dot" data-slide="1"></span>
+                                    <span class="dot" data-slide="2"></span>
+                                </div>
+                                <button class="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Section -->
+                    <div class="content-section">
+                        <h2>Frequently Asked Questions</h2>
+                        <div class="faq-container">
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>What qualifications do I need to enroll in your courses?</h4>
+                                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Most of our courses are designed for students with a basic understanding of computers. Some advanced courses may require prior programming knowledge or specific educational backgrounds. Each course page lists the specific prerequisites needed.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>Do you offer job placement assistance?</h4>
+                                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Yes, we have a dedicated placement cell that works with over 200+ hiring partners. We provide resume building, interview preparation, and direct placement opportunities. Our placement rate is consistently above 95% for students who complete our career-track programs.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>What is the duration of your courses?</h4>
+                                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Course durations vary from 2 weeks to 6 months depending on the program. Our short courses typically run for 2-4 weeks, while comprehensive career tracks run for 3-6 months. We also offer flexible timing options including weekday, weekend, and evening batches.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>Do you offer online courses?</h4>
+                                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>Yes, all our courses are available in both online and offline formats. Our online courses feature live interactive sessions, not pre-recorded videos, ensuring you get the same quality of education as our in-person classes. You can also access recordings of sessions for revision.</p>
+                                </div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">
+                                    <h4>Are there any scholarships or financial aid options available?</h4>
+                                    <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                                </div>
+                                <div class="faq-answer">
+                                    <p>We offer merit-based scholarships for outstanding students and need-based financial aid. We also have flexible payment plans and income share agreements for select programs where you can pay after getting a job. Contact our admissions team for more details.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="content-right" style=" position: relative;
+                top: 0rem;
+                height: fit-content;
+                width: 100%;
+                align-self: start;">
+                    <div class="enquiry-form">
+                        <h3>Request Information</h3>
+                        <p>Fill out the form below and our team will get back to you within 24 hours.</p>
+                        <form id="course-enquiry-form" action="/submit-course-enquiry" method="POST">
+                            <div class="form-group">
+                                <input type="text" id="name" name="fullName" placeholder=" ">
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder=" ">
+                                <label for="email">Email Address</label>
+                            </div>
+                            <div class="form-group phone-group">
+                                <span class="phone-prefix">+91</span>
+                                <input type="tel" id="phone" name="phone" placeholder=" ">
+                                <label for="phone">Phone Number</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="course-interest" name="courseInterest">
+                                    <option value=""></option>
+                                    <option value="GRE">GRE</option>
+                                    <option value="GMAT">GMAT</option>
+                                    <option value="SAT">SAT</option>
+                                    <option value="IELTS">IELTS</option>
+                                    <option value="TOEFL">TOEFL</option>
+                                    <option value="PTE">PTE</option>
+                                    <option value="ACT">ACT</option>
+                                    <option value="AP">AP</option>
+                                    <option value="CBSE">CBSE</option>
+                                </select>
+                                <label for="course-interest">Course Interest</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="preferred-mode" name="preferredMode">
+                                    <option value=""></option>
+                                    <option value="online">Online</option>
+                                    <option value="offline">Offline (In-Campus)</option>
+                                    <option value="hybrid">Hybrid</option>
+                                </select>
+                                <label for="preferred-mode">Preferred Mode</label>
+                            </div>
+                            <button type="submit" class="submit-btn">Request Information</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-sidebar">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Main Campus</h4>
+                                <p>123 Tech Park, Silicon Valley Road, Bangalore - 560001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+91 9876543210</p>
+                                <p>+91 8765432109</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>admissions@techgenius.edu</p>
+                                <p>info@techgenius.edu</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Office Hours</h4>
+                                <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="upcoming-events">
+                        <h3>Upcoming Events</h3>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">Mar</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Web Development Workshop</h4>
+                                <p><i class="fas fa-clock"></i> 10:00 AM - 1:00 PM</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Main Campus</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">22</span>
+                                <span class="month">Mar</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Career in Data Science Webinar</h4>
+                                <p><i class="fas fa-clock"></i> 6:00 PM - 7:30 PM</p>
+                                <p><i class="fas fa-laptop"></i> Online</p>
+                            </div>
+                        </div>
+                        <div class="event-item">
+                            <div class="event-date">
+                                <span class="day">05</span>
+                                <span class="month">Apr</span>
+                            </div>
+                            <div class="event-details">
+                                <h4>Tech Hiring Fair 2023</h4>
+                                <p><i class="fas fa-clock"></i> 9:00 AM - 5:00 PM</p>
+                                <p><i class="fas fa-map-marker-alt"></i> Main Campus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page Section -->
+    <section class="contact-page" id="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions? We're here to help you on your journey to becoming a software professional.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h3>Our Locations</h3>
+                        <div class="location-tabs">
+                            <div class="location-tab active" data-location="bangalore">Bangalore</div>
+                            <div class="location-tab" data-location="hyderabad">Hyderabad</div>
+                            <div class="location-tab" data-location="pune">Pune</div>
+                        </div>
+                        <div class="location-content active" id="bangalore-location">
+                            <p>123 Tech Park, Silicon Valley Road, Bangalore - 560001</p>
+                            <p>Phone: +91 9876543210</p>
+                        </div>
+                        <div class="location-content" id="hyderabad-location">
+                            <p>456 Cyber Towers, Hi-Tech City, Hyderabad - 500081</p>
+                            <p>Phone: +91 9876543211</p>
+                        </div>
+                        <div class="location-content" id="pune-location">
+                            <p>789 IT Park, Hinjewadi Phase 1, Pune - 411057</p>
+                            <p>Phone: +91 9876543212</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Office Hours</h3>
+                        <div class="hours-grid">
+                            <div class="day">Monday - Friday</div>
+                            <div class="time">9:00 AM - 6:00 PM</div>
+                            <div class="day">Saturday</div>
+                            <div class="time">10:00 AM - 4:00 PM</div>
+                            <div class="day">Sunday</div>
+                            <div class="time">Closed</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>General Inquiries: <a href="mailto:info@techgenius.edu">info@techgenius.edu</a></p>
+                        <p>Admissions: <a href="mailto:admissions@techgenius.edu">admissions@techgenius.edu</a></p>
+                        <p>Placements: <a href="mailto:placements@techgenius.edu">placements@techgenius.edu</a></p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>Call Us</h3>
+                        <p>Toll Free: <a href="tel:1800123456">1800-123-456</a></p>
+                        <p>Admissions: <a href="tel:+919876543210">+91 9876543210</a></p>
+                        <p>Support: <a href="tel:+918765432109">+91 8765432109</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="contact-name" placeholder=" " required>
+                                <label for="contact-name">Full Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="contact-email" placeholder=" " required>
+                                <label for="contact-email">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group phone-group">
+                                <span class="phone-prefix">+91</span>
+                                <input type="tel" id="contact-phone" placeholder=" " required>
+                                <label for="contact-phone">Phone Number</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="contact-subject" required>
+                                    <option value=""></option>
+                                    <option value="admission">Admission Inquiry</option>
+                                    <option value="course">Course Information</option>
+                                    <option value="placement">Placement Assistance</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <label for="contact-subject">Subject</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contact-message" rows="5" placeholder=" " required></textarea>
+                            <label for="contact-message">Your Message</label>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-section">
+                <h3>Find Us On Map</h3>
+                <div class="map-container" id="map">
+                    <!-- Map will be loaded here via JavaScript -->
+                </div>
+                <div class="map-locations">
+                    <button class="map-location-btn active" data-location="bangalore">Bangalore Campus</button>
+                    <button class="map-location-btn" data-location="hyderabad">Hyderabad Campus</button>
+                    <button class="map-location-btn" data-location="pune">Pune Campus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <!-- Success Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="success-message">
+                <i class="fas fa-check-circle"></i>
+                <h3>Thank You!</h3>
+                <p>Your message has been sent successfully. Our team will get back to you within 24 hours.</p>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/Footer') %>
+    <script src="/js/Home.js"></script>
+    <script src="/js/Admisstion.js"></script>
+    <script src="/js/Contact&About.js"></script>
+    <!-- Google Maps API Script -->
+     
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+
+      <!-- GSAP and ScrollTrigger -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Main JavaScript -->
+</body>
+</html>

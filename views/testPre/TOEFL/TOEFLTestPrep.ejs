@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOEFL Syllabus</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/Home.css">
+  <link rel="stylesheet" href="/css/TOEFL/TOEFLTestPrep.css">
+
+ 
+</head>
+<body>
+    <%- include('../../partials/Header') %>
+
+    <div class="page-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>About the Test</h1>
+                <div class="breadcrumb">
+                    <a href="#">Home</a> / <a href="#">TOEFL Exam</a> / <span>About the Test</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <!-- Left Content -->
+                <div class="content-left">
+                    <div class="content-section">
+                        <h2>What is the TOEFL Test?</h2>
+                        <p>The TOEFL is a test for non-native English speakers to evaluate their ability to read, write, speak, and listen to English. The TOEFL iBT test measures your ability to use and understand English at the university level. And it evaluates how well you combine your listening, reading, speaking, and writing skills to perform academic tasks.</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2>TOEFL Test Formats</h2>
+                        <p>There are two formats for the TOEFL test, depending on the location of your test center, which is often a consideration for those planning to study abroad. Most test takers take the TOEFL iBT test. Test centers that do not have Internet access offer the Paper-based Test (PBT). In India, it is the TOEFL iBT that is conducted in various test centers across the country. Each year, nearly a million individuals of all ages take the TOEFL test to demonstrate their English-language proficiency. More than 25 million people from all over the world have taken the TOEFL test since it was first offered.</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2>Who Accepts TOEFL Scores?</h2>
+                        <p>More than 8,000 colleges, agencies, and other institutions in over 130 countries accept TOEFL scores. Other organizations rely on TOEFL scores as well:</p>
+                        <ul>
+                            <li>Immigration departments use them to issue residential and work visas.</li>
+                            <li>Medical and licensing agencies use them for professional certification purposes.</li>
+                            <li>Individuals use them to measure their progress in learning English.</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-section">
+                        <h2>TOEFL iBT Test Structure</h2>
+                        <div class="highlight-box">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Section</th>
+                                        <th>Duration</th>
+                                        <th>Questions</th>
+                                        <th>Task</th>
+                                        <th>Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Reading</td>
+                                        <td>35 minutes</td>
+                                        <td>20</td>
+                                        <td>Multiple passages from academic texts and answer questions.</td>
+                                        <td>0 – 30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Listening</td>
+                                        <td>36 minutes</td>
+                                        <td>28</td>
+                                        <td>Listen to lectures, classroom discussions, and conversations, and then answer questions.</td>
+                                        <td>0 – 30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Speaking</td>
+                                        <td>16 minutes</td>
+                                        <td>4 tasks</td>
+                                        <td>Express an opinion on a familiar topic; speak based on reading and listening tasks.</td>
+                                        <td>0 – 30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Writing</td>
+                                        <td>29 minutes</td>
+                                        <td>2 tasks</td>
+                                        <td>Write essay responses based on reading and listening tasks; support an opinion in writing.</td>
+                                        <td>0 – 30</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2>Some TOEFL Facts</h2>
+                        <div class="highlight-box">
+                            <h3>Where are TOEFL scores accepted?</h3>
+                            <p>More than 8,000 colleges, universities, and agencies in 130 countries accept TOEFL scores.</p>
+                            <h3>How do I register for the test?</h3>
+                            <p>Visit <a href="https://www.ets.org/toefl" target="_blank">www.ets.org/toefl</a> to register for the test.</p>
+                            <h3>How much does it cost?</h3>
+                            <p>TOEFL fee in India is $205.</p>
+                            <h3>What if I need to cancel or reschedule?</h3>
+                            <p>You can reschedule or cancel your registration up to three full days before your test date (not including the day of the test or the day of your request). That means if your test is on a Saturday, you must reschedule or cancel by Tuesday. The fee to reschedule is $60 and must be paid before you can reschedule. If your request is not received at least three full days in advance, your full test fee will be forfeited. Test administrators are not authorized to make schedule changes. To reschedule, you will need to provide your registration number and the full name you used to register.</p>
+                            <h3>How and when do I get my scores?</h3>
+                            <p>Scores will be posted online within two weeks of the test date. Log in to your online TOEFL iBT account, enter the ETS ID received when you registered, and click on the “View Scores” link. Your scores are also mailed to the universities or institutions you selected when you registered.</p>
+                            <h3>How long is the score valid?</h3>
+                            <p>TOEFL scores are valid for 2 years.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Content (Form) -->
+                <div class="content-right">
+                    <form class="enquiry-form" id="enquiryForm" action="/submit-toeflTest" method="POST">
+                        <h3>Planning to study abroad?</h3>
+                        <p>Get free 1-on-1 counselling with our experts</p>
+            
+                        <div class="form-group">
+                            <input type="text" id="firstName" name="firstName" required>
+                            <label for="firstName">First Name</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="text" id="lastName" name="lastName" required>
+                            <label for="lastName">Last Name</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                            <label for="mobile">Mobile No. (10 digits)</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <select id="program" name="program" required>
+                                <option value="">Select Program</option>
+                                <option value="GMAT">GMAT</option>
+                                <option value="GRE">GRE</option>
+                                <option value="IELTS">IELTS</option>
+                            </select>
+                            <label for="program">Select Program</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="mode" name="mode" required>
+                                <option value="">Select Mode</option>
+                                <option value="Classroom">Classroom Coaching</option>
+                                <option value="Online">Online Coaching</option>
+                            </select>
+                            <label for="mode">Select Mode</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <select id="city" name="city" required>
+                                <option value="">Select City</option>
+                                <option value="Noida">Noida</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Gurgaon">Gurgaon</option>
+                            </select>
+                            <label for="city">Select City</label>
+                        </div>
+            
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="authorize" name="authorize" required>
+                            <label for="authorize">I authorize Manya - The Princeton Review to contact me even if my number is registered with DND to assist with my enquiry and get regular updates through SMS/Whatsapp.</label>
+                        </div>
+            
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- Back to Top Button -->
+        <div class="back-to-top" onclick="scrollToTop()">↑</div>
+    </div>
+
+    <!-- Testimonials Section (Outside Page Container) -->
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <img src="student1.jpg" alt="Shruti Venkat">
+                <div class="testimonial-content">
+                    <h4>Shruti Venkat</h4>
+                    <p>"Without the support and training offered by Manya, it wouldn’t have been possible for me to score a 114. The study material provided was perfect for the practice I needed before the exam, and the faculty could not have been more supportive and proficient. She even agreed to teach me again separately when I skipped a couple of classes due to personal reasons. Overall, I'm very happy with my experience!"</p>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <img src="student2.jpg" alt="Rahul Sharma">
+                <div class="testimonial-content">
+                    <h4>Rahul Sharma</h4>
+                    <p>"Manya's TOEFL preparation program was a game-changer for me. The faculty was highly experienced, and the study materials were comprehensive. I scored 110 on my first attempt, and I couldn't have done it without their guidance. Highly recommended!"</p>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <img src="student3.jpg" alt="Priya Patel">
+                <div class="testimonial-content">
+                    <h4>Priya Patel</h4>
+                    <p>"The TOEFL 1 on 1 program at Manya was exactly what I needed. The personalized attention helped me focus on my weak areas, and I saw a significant improvement in my scores. I scored 112, and I'm thrilled with the results!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <%- include('../../partials/Footer') %>
+  
+   <script src="/js/Home.js"></script>
+   <script src="/js/TOEFL/TOEFLTestPre.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</body>
+</html>

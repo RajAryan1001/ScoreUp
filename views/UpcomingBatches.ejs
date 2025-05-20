@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Expert Session | Education Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/Home.css"> 
+    <link rel="stylesheet" href="/css/Admission.css">      
+    <link rel="stylesheet" href="/css/UpcomingBooking.css">   
+
+</head>
+<body>
+    <%- include('partials/Header') %> 
+    <div class="page-container">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Meet The Experts to Start Your Global Journey</h1>
+                <p>Book Your Free Expert Session Now!</p>
+                <div class="breadcrumb">
+                    <a href="#">Home</a> / <span>Book Session</span>
+                </div>
+            </div>
+        </section>
+        
+        <div class="main-content">
+            <div class="content-wrapper">
+                <div class="content-left">
+                    <div class="content-section">
+                        <h2>Book Your Expert Session</h2>
+                        <p>Our experts will guide you through every step of your global education journey. Fill out the form to book a free consultation session.</p>
+                    </div>
+
+                    <div class="booking-container">
+                        <!-- Progress Bar -->
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress" id="progress"></div>
+                                <div class="progress-step active" data-step="1">1</div>
+                                <div class="progress-step" data-step="2">2</div>
+                                <div class="progress-step" data-step="3">3</div>
+                            </div>
+                        </div>
+
+                        <!-- Booking Form -->
+                        <form id="bookingForm" method="POST" action="/submit-booking">
+                            <!-- Step 1: Course Selection -->
+                            <div class="form-step active" id="step1">
+                                <h3 style="margin-bottom: 27px;">Select Your Preferences</h3>
+                                
+                                <div class="form-group">
+                                    <select id="batchType" name="batchType" required>
+                                        <option value="" disabled selected></option>
+                                        <option value="classroom">Classroom Coaching</option>
+                                        <option value="online">Online Coaching</option>
+                                    </select>
+                                    <label for="batchType">Select Batch Type</label>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <select id="course" name="course" required>
+                                        <option value="" disabled selected></option>
+                                        <option value="gre">GRE</option>
+                                        <option value="gmat">GMAT</option>
+                                        <option value="sat">Digital SAT</option>
+                                        <option value="ielts">IELTS</option>
+                                        <option value="toefl">TOEFL</option>
+                                    </select>
+                                    <label for="course">Select Your Course</label>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="date" id="sessionDate" name="sessionDate" required>
+                                    <label for="sessionDate">Preferred date</label>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="text" id="sessionDays"  name="sessionDays" required>
+                                    <label for="sessionDays">Preferred days</label>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="time" name="sessionTime" id="sessionTime" required>
+                                    <label for="sessionTime">Preferred time</label>
+                                </div>
+                                
+                                <div class="price-display">
+                                    <p>Course Price: <span id="coursePrice">INR 56199.00</span></p>
+                                </div>
+                                
+                                <div class="form-buttons">
+                                    <button type="button" class="next-btn" id="step1Next">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Mobile Number -->
+                            <div class="form-step" id="step2">
+                                <h3>Enter Your Mobile Number</h3>
+                                
+                                <div class="form-group phone-group">
+                                    <div class="phone-prefix">+91</div>
+                                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10" required>
+                                    <label for="phone">10 digit number without +91</label>
+                                </div>
+                                
+                                <div class="form-buttons">
+                                    <button type="button" class="prev-btn" id="step2Prev">Previous</button>
+                                    <button type="button" class="next-btn" id="step2Next">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Personal Details -->
+                            <div class="form-step" id="step3">
+                                <h3>Please share your details</h3>
+                                
+                                <div class="selection-summary compact">
+                                    <!-- Summary will be populated by JavaScript -->
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="text" id="firstName" name="firstName">
+                                    <label for="firstName">First Name*</label>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="text" id="lastName" name="lastName" required>
+                                    <label for="lastName">Last Name*</label>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" required>
+                                    <label for="email">Enter your E-Mail*</label>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="text" id="address" name="address" required>
+                                    <label for="address">Enter your address*</label>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <select id="state" name="state" required>
+                                        <option value="" disabled selected></option>
+                                        <option value="maharashtra">Maharashtra</option>
+                                        <option value="delhi">Delhi</option>
+                                        <option value="karnataka">Karnataka</option>
+                                        <option value="tamilnadu">Tamil Nadu</option>
+                                        <option value="telangana">Telangana</option>
+                                    </select>
+                                    <label for="state">Select State*</label>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <select id="city" name="city" required>
+                                        <option value="" disabled selected></option>
+                                        <!-- Cities will be populated based on state selection -->
+                                    </select>
+                                    <label for="city">Select City*</label>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <select id="center" name="center" required>
+                                        <option value="" disabled selected></option>
+                                        <!-- Centers will be populated based on city selection -->
+                                    </select>
+                                    <label for="center">Your Nearest Center*</label>
+                                </div>
+                                
+                                <div class="form-buttons">
+                                    <button type="button" class="prev-btn" id="step3Prev">Previous</button>
+                                    <button type="button" class="view-details-btn" id="viewDetails">View Details</button>
+                                    <button type="submit" class="submit-btn">Submit Booking</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="content-right">
+                    <div class="enquiry-form">
+                        <h3>Why Choose Us?</h3>
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <h4>Expert Guidance</h4>
+                                <p>Get personalized guidance from experienced mentors who have helped thousands of students achieve their dreams.</p>
+                            </div>
+                            <div class="benefit-item">
+                                <h4>Comprehensive Preparation</h4>
+                                <p>Our courses cover all aspects of the exams with proven strategies and techniques.</p>
+                            </div>
+                            <div class="benefit-item">
+                                <h4>Track Record of Success</h4>
+                                <p>Our students consistently score in the top percentiles and gain admission to prestigious institutions worldwide.</p>
+                            </div>
+                            <div class="benefit-item">
+                                <h4>Flexible Learning Options</h4>
+                                <p>Choose between online and classroom coaching based on your convenience and learning style.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="modal" id="confirmationModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Booking Details</h3>
+            <div id="confirmationDetails"></div>
+            <button class="submit-btn" id="confirmBooking">Confirm Booking</button>
+        </div>
+    </div>
+
+    <%- include('partials/Footer') %>
+
+    <script src="/js/Home.js"></script>
+    <script src="/js/UpcomingBooking.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+</body>
+</html>

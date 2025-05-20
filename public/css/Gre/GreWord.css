@@ -1,0 +1,366 @@
+:root {
+    --primary: #ff6b35;
+    --secondary: #2b2d42;
+    --text-dark: #333;
+    --text-light: #666;
+    --white: #fff;
+    --bg-light: #f8f8f8;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(43, 45, 66, 0.9), rgba(43, 45, 66, 0.9)),
+                url('https://source.unsplash.com/1600x400/?university,education') center/cover;
+    padding: 6.4rem 2rem;
+    color: var(--white);
+    position: relative;
+}
+
+.hero-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    animation: fadeInDown 0.5s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.breadcrumb a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--primary);
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1400px;
+    margin: -50px auto 0;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.content-left {
+    background: var(--white);
+    border-radius: 15px;
+    padding: 2.5rem;
+    box-shadow: var(--shadow);
+}
+
+.content-section {
+    margin-bottom: 3rem;
+}
+
+.content-section h2 {
+    color: var(--secondary);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.content-section h3 {
+    color: var(--primary);
+    margin: 1.5rem 0 1rem;
+    font-size: 1.4rem;
+}
+
+.content-section p {
+    margin-bottom: 1.2rem;
+    color: var(--text-dark);
+    font-size: 1.05rem;
+}
+
+.content-section ul {
+    list-style: none;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-section ul li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.content-section ul li::before {
+    content: "•";
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.highlight-box {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem 0;
+    border-left: 4px solid var(--primary);
+}
+
+.highlight-box h3 {
+    color: var(--secondary);
+    margin-bottom: 1rem;
+}
+
+.highlight-box ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+.highlight-box li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.highlight-box li::before {
+    content: "•";
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: var(--white);
+    padding: 4rem 2rem;
+    margin: 4rem 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.testimonial-slider {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-slide {
+    display: none;
+    animation: fadeIn 0.5s ease;
+    padding: 0 2rem;
+}
+
+.testimonial-slide.active {
+    display: block;
+}
+
+.testimonial-slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+    object-fit: cover;
+    box-shadow: var(--shadow);
+}
+
+.testimonial-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.testimonial-author {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.slider-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.slider-nav button {
+    background: none;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-nav button:hover {
+    background: var(--primary);
+    color: var(--white);
+    transform: scale(1.05);
+}
+
+/* FAQ Section */
+.faq-section {
+    max-width: 1400px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.faq-section h2 {
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.faq-item {
+    background: var(--white);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: var(--bg-light);
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--secondary);
+}
+
+.faq-toggle {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 1.5rem 1.5rem;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+.faq-answer.active {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-content {
+        padding: 0 1.5rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 1rem;
+    }
+    
+    .content-left {
+        padding: 1.5rem;
+    }
+    
+    .testimonial-content {
+        font-size: 1rem;
+    }
+    
+    .highlight-box {
+        padding: 1.5rem;
+    }
+
+    .hero-content{
+        margin-top: 50px;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .content-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .content-section h3 {
+        font-size: 1.2rem;
+    }
+}

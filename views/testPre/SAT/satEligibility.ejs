@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAT Eligibility</title>
+  <link rel="stylesheet" href="/css/Home.css">
+  <link rel="stylesheet" href="/css/SAT/satEligibility.css">
+</head>
+<body>
+
+    <%- include('partials/Header') %> 
+  <div class="page-container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>SAT Eligibility</h1>
+        <div class="breadcrumb">
+          <a href="#">Home</a> / <a href="#">SAT Exam</a> / <span>SAT Eligibility</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="content-wrapper">
+        <!-- Left Content -->
+        <div class="content-left">
+          <!-- SAT Eligibility Overview -->
+          <div class="content-section">
+            <h2>SAT Eligibility Overview</h2>
+            <p>If you’re aiming to study abroad for your undergraduate degree, undergoing the SAT (Scholastic Assessment Test) exam is essential. It’s a standardized test accepted in the USA, UK, Canada, Australia, and more, assessing your math, reading, and writing skills. There are no specific eligibility criteria, so anyone interested can apply. The exam is also available in a digital version with a reduced time frame of 2 hours and 14 minutes.</p>
+          </div>
+
+          <!-- SAT Eligibility Criteria -->
+          <div class="content-section">
+            <h2>SAT Eligibility Criteria</h2>
+            <div class="highlight-box">
+              <table>
+                <tr>
+                  <td>Age Limit</td>
+                  <td>No specific age limit. Students aged 13+ can register.</td>
+                </tr>
+                <tr>
+                  <td>Educational Background</td>
+                  <td>No specific educational criteria. High school students are the primary candidates.</td>
+                </tr>
+                <tr>
+                  <td>Frequency</td>
+                  <td>No limit on attempts. Students can take the SAT multiple times.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- Age Limit for SAT Exam -->
+          <div class="content-section">
+            <h2>Age Limit for the SAT Exam</h2>
+            <p>There is no maximum age limit set by the conducting body. Students aged 13 years and above can create their account on the official website of SAT and register themselves.</p>
+            <ul>
+              <li>Students in 11th and 12th grade can sit for the exam.</li>
+              <li>Students under the age of 13 can only register by phone or by mail.</li>
+            </ul>
+          </div>
+
+          <!-- Educational Requirements -->
+          <div class="content-section">
+            <h2>Educational Requirements</h2>
+            <p>The College Board has not established any educational or academic requirements for SAT Eligibility. High school students who want to study abroad can apply for SAT, which is well-recognized in various countries like:</p>
+            <ul>
+              <li>United States of America (USA)</li>
+              <li>Canada</li>
+              <li>United Kingdom (UK)</li>
+              <li>Singapore</li>
+              <li>Netherlands</li>
+              <li>Australia</li>
+              <li>New Zealand</li>
+            </ul>
+          </div>
+
+          <!-- SAT Eligibility for Students With Disabilities -->
+          <div class="content-section">
+            <h2>SAT Eligibility for Students With Disabilities</h2>
+            <p>Students with disabilities are eligible to take the exam, and they can access accommodations just as they could with the traditional paper-based SAT. To receive these accommodations, students must first obtain approval through the College Board’s Services for Students with Disabilities (SSD).</p>
+            <div class="highlight-box">
+              <h3>Facilities Provided for Specially-Abled Students</h3>
+              <ul>
+                <li>Extended time for the exam and extra breaks.</li>
+                <li>Braille, raised lines, drawings, and text-to-speech conversion.</li>
+                <li>Recording answers with the help of a scribe.</li>
+                <li>Accessibility to wheelchairs and small group settings.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- SAT Exam Fees -->
+          <div class="content-section">
+            <h2>SAT Exam Fees</h2>
+            <div class="highlight-box">
+              <table>
+                <tr>
+                  <th>Fee Type</th>
+                  <th>Amount (INR)</th>
+                </tr>
+                <tr>
+                  <td>Test center fee (specific locations only)</td>
+                  <td>Rs 2023</td>
+                </tr>
+                <tr>
+                  <td>Late registration fee</td>
+                  <td>Rs 2867</td>
+                </tr>
+                <tr>
+                  <td>Fee to change the test center</td>
+                  <td>Rs 2445</td>
+                </tr>
+                <tr>
+                  <td>Registration cancellation fee</td>
+                  <td>Rs 2445</td>
+                </tr>
+                <tr>
+                  <td>Late cancellation fee</td>
+                  <td>Rs 3288</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- Tips to Prepare for the Exam -->
+          <div class="content-section">
+            <h2>Tips to Prepare for the Exam</h2>
+            <ul>
+              <li>Practice with a variety of SAT practice tests.</li>
+              <li>Set a target SAT score based on your desired college.</li>
+              <li>Identify your strong and weak sections during preparation.</li>
+              <li>Focus on qualifying with a good grade to secure scholarships.</li>
+              <li>Appear for the SAT multiple times if needed.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right Content (Enquiry Form) -->
+        <div class="content-right">
+          <form class="enquiry-form" id="enquiryForm" action="/submit-satTest" method="POST">
+              <h3>Planning to study abroad?</h3>
+              <p>Get free 1-on-1 counselling with our experts</p>
+  
+              <div class="form-group">
+                  <input type="text" id="firstName" name="firstName" required>
+                  <label for="firstName">First Name</label>
+              </div>
+  
+              <div class="form-group">
+                  <input type="text" id="lastName" name="lastName" required>
+                  <label for="lastName">Last Name</label>
+              </div>
+  
+              <div class="form-group">
+                  <input type="email" id="email" name="email" required>
+                  <label for="email">Email</label>
+              </div>
+  
+              <div class="form-group">
+                  <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                  <label for="mobile">Mobile No. (10 digits)</label>
+              </div>
+  
+              <div class="form-group">
+                  <select id="program" name="program" required>
+                      <option value="">Select Program</option>
+                      <option value="GMAT">GMAT</option>
+                      <option value="GRE">GRE</option>
+                      <option value="IELTS">IELTS</option>
+                  </select>
+                  <label for="program">Select Program</label>
+              </div>
+              <div class="form-group">
+                  <select id="mode" name="mode" required>
+                      <option value="">Select Mode</option>
+                      <option value="Classroom">Classroom Coaching</option>
+                      <option value="Online">Online Coaching</option>
+                  </select>
+                  <label for="mode">Select Mode</label>
+              </div>
+              
+              <div class="form-group">
+                  <select id="city" name="city" required>
+                      <option value="">Select City</option>
+                      <option value="Noida">Noida</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Gurgaon">Gurgaon</option>
+                  </select>
+                  <label for="city">Select City</label>
+              </div>
+  
+              <div class="checkbox-group">
+                  <input type="checkbox" id="authorize" name="authorize" required>
+                  <label for="authorize">I authorize Manya - The Princeton Review to contact me even if my number is registered with DND to assist with my enquiry and get regular updates through SMS/Whatsapp.</label>
+              </div>
+              <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top">↑</div>
+
+  
+  
+  <%- include('../../partials/Footer') %>
+  
+  
+<script src="/js/Home.js"></script>
+<script src="/js/SAT/satEligibility.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</body>
+</html>

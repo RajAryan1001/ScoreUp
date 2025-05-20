@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP Exam Pattern</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Home.css">
+    <link rel="stylesheet" href="/css/AP/APPre.css">
+</head>
+<body>
+    <%- include('../../partials/Header') %>
+    <div class="page-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>AP Exam Practice</h1>
+                <div class="breadcrumb">
+                    <a href="#">Home</a> / <a href="#">AP Exam</a> / <span>AP Exam Practice</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="content-wrapper">
+                <!-- Left Content -->
+                <div class="content-left">
+                    <div class="content-section">
+                        <h2>What is the AP Exam?</h2>
+                        <p>The Advanced Placement (AP) Exam is a standardized test designed to measure a student's mastery of college-level material in specific subjects. High scores on AP exams can earn students college credit and advanced placement in college courses.</p>
+                        <div class="highlight-box">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>AP Exam Type</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>AP Calculus AB/BC</td>
+                                        <td>Tests knowledge of calculus concepts and applications.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AP Biology</td>
+                                        <td>Assesses understanding of biological concepts and principles.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AP English Literature</td>
+                                        <td>Evaluates skills in analyzing and interpreting literature.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AP US History</td>
+                                        <td>Tests knowledge of US history from pre-Columbian times to the present.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p>AP exams are typically taken at the end of an AP course in high school. They are scored on a scale of 1 to 5, with 5 being the highest.</p>
+                    </div>
+
+                    <div class="content-section">
+                        <h2>Why Take the AP Exam?</h2>
+                        <ul>
+                            <li><strong>Earn College Credit:</strong> High scores can earn you college credit, saving time and money.</li>
+                            <li><strong>Stand Out in Admissions:</strong> AP courses and exams demonstrate your academic rigor to colleges.</li>
+                            <li><strong>Develop College Skills:</strong> AP courses prepare you for the academic challenges of college.</li>
+                        </ul>
+                    </div>
+
+                    <div class="content-section">
+                        <h2>AP Exam Structure</h2>
+                        <div class="highlight-box">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Section</th>
+                                        <th>Description</th>
+                                        <th>Duration</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Multiple-Choice</td>
+                                        <td>Questions with 4-5 answer choices.</td>
+                                        <td>60-90 minutes</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Free-Response</td>
+                                        <td>Essays, problem-solving, or spoken responses.</td>
+                                        <td>60-90 minutes</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2>AP Exam Dates 2025</h2>
+                        <p>AP exams are typically held in May. Below are the key dates for 2025:</p>
+                        <div class="highlight-box">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Week</th>
+                                        <th>Dates</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Week 1</td>
+                                        <td>May 5 - May 9, 2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Week 2</td>
+                                        <td>May 12 - May 16, 2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Late Testing</td>
+                                        <td>May 19 - May 23, 2025</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="content-section">
+                        <h2>How to Prepare for the AP Exam</h2>
+                        <ul>
+                            <li><strong>Start Early:</strong> Begin your preparation at least 3-4 months before the exam.</li>
+                            <li><strong>Use Quality Resources:</strong> Refer to AP-approved textbooks and online resources.</li>
+                            <li><strong>Take Practice Tests:</strong> Simulate the exam environment with full-length practice tests.</li>
+                            <li><strong>Join Study Groups:</strong> Collaborate with peers to discuss difficult topics.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Content (Form) -->
+                <div class="content-right">
+                    <form class="enquiry-form" id="enquiryForm" action="/submit-apTest" method="POST">
+                        <h3>Planning to study abroad?</h3>
+                        <p>Get free 1-on-1 counselling with our experts</p>
+            
+                        <div class="form-group">
+                            <input type="text" id="firstName" name="firstName" required>
+                            <label for="firstName">First Name</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="text" id="lastName" name="lastName" required>
+                            <label for="lastName">Last Name</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                            <label for="mobile">Mobile No. (10 digits)</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <select id="program" name="program" required>
+                                <option value="">Select Program</option>
+                                <option value="GMAT">GMAT</option>
+                                <option value="GRE">GRE</option>
+                                <option value="IELTS">IELTS</option>
+                            </select>
+                            <label for="program">Select Program</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="mode" name="mode" required>
+                                <option value="">Select Mode</option>
+                                <option value="Classroom">Classroom Coaching</option>
+                                <option value="Online">Online Coaching</option>
+                            </select>
+                            <label for="mode">Select Mode</label>
+                        </div>
+            
+                        <div class="form-group">
+                            <select id="city" name="city" required>
+                                <option value="">Select City</option>
+                                <option value="Noida">Noida</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Gurgaon">Gurgaon</option>
+                            </select>
+                            <label for="city">Select City</label>
+                        </div>
+            
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="authorize" name="authorize" required>
+                            <label for="authorize">I authorize Manya - The Princeton Review to contact me even if my number is registered with DND to assist with my enquiry and get regular updates through SMS/Whatsapp.</label>
+                        </div>
+            
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- Back to Top Button -->
+        <div class="back-to-top" onclick="scrollToTop()">↑</div>
+    </div>
+
+    <!-- JavaScript -->
+    <%- include('../../partials/Footer') %>
+    <script src="/js/Home.js"></script>
+    <script src="/js/AP/APPre.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</body>
+</html>
