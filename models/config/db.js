@@ -6,6 +6,7 @@ mongoose.connect('mongodb+srv://Raj:Rajaryan@cluster0.crfzpz6.mongodb.net/Educat
     console.log(err);
 });
 
+
 // // test
 
 // const mongoose = require('mongoose');
