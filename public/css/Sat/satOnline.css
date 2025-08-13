@@ -38,6 +38,11 @@
     max-width: 1200px;
     margin: 0 auto;
     animation: fadeInDown 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
   }
   
   .hero-content h1 {

@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.to(text, {
       opacity: 1,
       y: 0,
-      duration: 0.8,
+      duration: 0.6,
       scrollTrigger: {
         trigger: text,
         start: "top 80%",
@@ -154,7 +154,7 @@ if (slides.length) {
         gsap.to(card, {
           opacity: 0,
           y: 20,
-          duration: 0.3,
+          duration: 0.1,
           onComplete: () => {
             card.style.display = "none"
           },
@@ -219,7 +219,7 @@ if (slides.length) {
 
     gsap.to(stat, {
       innerHTML: target,
-      duration: 2,
+      duration: 1,
       ease: "power2.out",
       snap: { innerHTML: 1 },
       scrollTrigger: {
@@ -248,7 +248,7 @@ if (slides.length) {
     gsap.from(card, {
       y: 50,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.6,
       delay: i * 0.1,
       scrollTrigger: {
         trigger: card,
@@ -299,14 +299,14 @@ if (slides.length) {
     feature.addEventListener("mouseenter", () => {
       gsap.to(feature, {
         scale: 1.05,
-        duration: 0.3,
+        duration: 0.2,
       })
     })
 
     feature.addEventListener("mouseleave", () => {
       gsap.to(feature, {
         scale: 1,
-        duration: 0.3,
+        duration: 0.2,
       })
     })
   })

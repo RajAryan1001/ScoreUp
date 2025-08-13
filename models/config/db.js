@@ -7,7 +7,7 @@ mongoose.connect('mongodb+srv://Raj:Rajaryan@cluster0.crfzpz6.mongodb.net/Educat
 });
 
 
-// // test
+// Cluster...
 
 // const mongoose = require('mongoose');
 

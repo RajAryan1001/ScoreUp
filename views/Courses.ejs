@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Prep Courses | Purchase Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <link rel="stylesheet" href="/css/Courses.css">
+
+
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- ScrollTrigger (optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="/css/courses.css">
     <link rel="stylesheet" href="/css/Home.css">
 
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -20,11 +30,11 @@
                 <h1>SCORE UP</h1>
                 <span>Software Coaching Institute</span>
             </div>
-    
+
             <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <span class="hamburger"></span>
             </button>
-    
+
             <ul class="nav-menu">
                 <li class="nav-item">
                     <a href="/" class="nav-link active">Home</a>
@@ -33,8 +43,8 @@
                 <li class="nav-item">
                     <a href="/courses" class="nav-link active">Our Courses</a>
                 </li>
-    
-    
+
+
                 <li class="nav-item dropdown" id="testPreDropdown">
                     <a href="#" class="nav-link dropdown-toggle">Test Pre <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content services-dropdown">
@@ -136,12 +146,13 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section" >
+    <section class="hero-section">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Premium Test Preparation Courses</h1>
                 <h2>Achieve Your Academic Goals</h2>
-                <p>Our expert-led courses are designed to help you excel in standardized tests and academic subjects. Choose from our wide range of comprehensive preparation programs.</p>
+                <p>Our expert-led courses are designed to help you excel in standardized tests and academic subjects.
+                    Choose from our wide range of comprehensive preparation programs.</p>
                 <div class="hero-buttons">
                     <a href="#courses" class="btn btn-primary">View Courses</a>
                     <a href="#" class="btn btn-secondary">Free Trial</a>
@@ -184,7 +195,8 @@
             <!-- GRE Course Card -->
             <div class="course-card" data-category="gre">
                 <div class="course-image">
-                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="GRE Preparation">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="GRE Preparation">
                 </div>
                 <div class="course-content">
                     <h3>GRE Preparation</h3>
@@ -212,11 +224,13 @@
             <!-- GMAT Course Card -->
             <div class="course-card" data-category="gmat">
                 <div class="course-image">
-                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="GMAT Preparation">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="GMAT Preparation">
                 </div>
                 <div class="course-content">
                     <h3>GMAT Preparation</h3>
-                    <p>Expert-led preparation for the Graduate Management Admission Test for business school applicants.</p>
+                    <p>Expert-led preparation for the Graduate Management Admission Test for business school applicants.
+                    </p>
                     <div class="course-benefits">
                         <h4>Course Benefits:</h4>
                         <ul>
@@ -240,11 +254,13 @@
             <!-- SAT Course Card -->
             <div class="course-card" data-category="sat">
                 <div class="course-image">
-                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="SAT Preparation">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="SAT Preparation">
                 </div>
                 <div class="course-content">
                     <h3>SAT Preparation</h3>
-                    <p>Comprehensive preparation for the Scholastic Assessment Test for college admissions in the US.</p>
+                    <p>Comprehensive preparation for the Scholastic Assessment Test for college admissions in the US.
+                    </p>
                     <div class="course-benefits">
                         <h4>Course Benefits:</h4>
                         <ul>
@@ -268,11 +284,13 @@
             <!-- TOEFL Course Card -->
             <div class="course-card" data-category="toefl">
                 <div class="course-image">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="TOEFL Preparation">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="TOEFL Preparation">
                 </div>
                 <div class="course-content">
                     <h3>TOEFL Preparation</h3>
-                    <p>Comprehensive preparation for the Test of English as a Foreign Language for non-native speakers.</p>
+                    <p>Comprehensive preparation for the Test of English as a Foreign Language for non-native speakers.
+                    </p>
                     <div class="course-benefits">
                         <h4>Course Benefits:</h4>
                         <ul>
@@ -296,7 +314,8 @@
             <!-- AP Course Card -->
             <div class="course-card" data-category="ap">
                 <div class="course-image">
-                    <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="AP Courses">
+                    <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="AP Courses">
                 </div>
                 <div class="course-content">
                     <h3>AP Courses</h3>
@@ -324,7 +343,8 @@
             <!-- ACT Course Card -->
             <div class="course-card" data-category="act">
                 <div class="course-image">
-                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="ACT Preparation">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="ACT Preparation">
                 </div>
                 <div class="course-content">
                     <h3>ACT Preparation</h3>
@@ -352,7 +372,8 @@
             <!-- PTE Course Card -->
             <div class="course-card" data-category="pte">
                 <div class="course-image">
-                    <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="PTE Preparation">
+                    <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                        alt="PTE Preparation">
                 </div>
                 <div class="course-content">
                     <h3>PTE Preparation</h3>
@@ -380,11 +401,13 @@
             <!-- CBSE Course Card -->
             <div class="course-card" data-category="cbse">
                 <div class="course-image">
-                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1422&q=80" alt="CBSE Tutoring">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1422&q=80"
+                        alt="CBSE Tutoring">
                 </div>
                 <div class="course-content">
                     <h3>CBSE Tutoring</h3>
-                    <p>Comprehensive tutoring for CBSE curriculum (10th, 11th, and 12th grades) with subject specialists.</p>
+                    <p>Comprehensive tutoring for CBSE curriculum (10th, 11th, and 12th grades) with subject
+                        specialists.</p>
                     <div class="course-benefits">
                         <h4>Course Benefits:</h4>
                         <ul>
@@ -408,11 +431,13 @@
             <!-- IGCSE & IB Course Card -->
             <div class="course-card" data-category="igcse">
                 <div class="course-image">
-                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="IGCSE & IB Tutoring">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="IGCSE & IB Tutoring">
                 </div>
                 <div class="course-content">
                     <h3>IGCSE & IB Tutoring</h3>
-                    <p>Specialized tutoring for International General Certificate of Secondary Education and International Baccalaureate programs.</p>
+                    <p>Specialized tutoring for International General Certificate of Secondary Education and
+                        International Baccalaureate programs.</p>
                     <div class="course-benefits">
                         <h4>Course Benefits:</h4>
                         <ul>
@@ -432,15 +457,17 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- IELTS Course Card -->
             <div class="course-card" data-category="ielts">
                 <div class="course-image">
-                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="IELTS Preparation">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                        alt="IELTS Preparation">
                 </div>
                 <div class="course-content">
                     <h3>IELTS Preparation</h3>
-                    <p>Comprehensive preparation for the International English Language Testing System for global education and immigration.</p>
+                    <p>Comprehensive preparation for the International English Language Testing System for global
+                        education and immigration.</p>
                     <div class="course-benefits">
                         <h4>Course Benefits:</h4>
                         <ul>
@@ -461,7 +488,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- No Results Message -->
         <div id="no-results" class="no-results-message" style="display: none;">
             <i class="fas fa-search"></i>
@@ -482,7 +509,8 @@
                     <i class="fas fa-user-graduate"></i>
                 </div>
                 <h3>Expert Instructors</h3>
-                <p>Learn from instructors who have scored in the top percentiles and have years of teaching experience.</p>
+                <p>Learn from instructors who have scored in the top percentiles and have years of teaching experience.
+                </p>
                 <ul class="feature-benefits">
                     <li><i class="fas fa-check-circle"></i> Top-scoring test takers</li>
                     <li><i class="fas fa-check-circle"></i> Experienced educators</li>
@@ -531,7 +559,8 @@
     <section class="cta-section">
         <div class="cta-container">
             <h2>Ready to Achieve Your Academic Goals?</h2>
-            <p>Join thousands of successful students who have transformed their academic journey with our expert-led test preparation courses. Enroll today and take the first step toward your dream institution.</p>
+            <p>Join thousands of successful students who have transformed their academic journey with our expert-led
+                test preparation courses. Enroll today and take the first step toward your dream institution.</p>
             <div class="cta-buttons">
                 <a href="#courses" class="btn btn-primary">Explore Courses</a>
                 <a href="#" class="btn btn-secondary">Contact an Advisor</a>
@@ -540,11 +569,12 @@
     </section>
 
     <!-- Footer -->
-   <%- include('partials/Footer') %>
+    <%- include('partials/Footer') %>
 
-    <!-- JavaScript -->
-    <script src="/js/Courses.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        <!-- JavaScript -->
+        <script src="/js/courses.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </body>
+
 </html>

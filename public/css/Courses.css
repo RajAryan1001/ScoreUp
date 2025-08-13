@@ -249,7 +249,6 @@ color: var(--primary-color);
 .hero-section {
 padding: 120px 0 60px;
 background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-overflow: hidden;
 
 }
 
@@ -261,6 +260,7 @@ max-width: 1400px;
 margin: 0 auto;
 padding: 0 20px;
 text-align: center !important;
+margin-right: 320px;
 }
 
 .hero-text {
@@ -298,6 +298,17 @@ gap: 15px;
 justify-content: center;
 }
 
+
+/* Secondary */
+.btn-secondary {
+  background-color: white;
+  color: #4361ee;
+  border: 2px solid #4361ee;
+}
+
+.btn-secondary:hover {
+  background-color: #e6edff;
+}
 
 
 .filter-box {

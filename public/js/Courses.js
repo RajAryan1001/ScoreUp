@@ -1,62 +1,46 @@
 // Initialize GSAP
 document.addEventListener('DOMContentLoaded', function() {
-  // Register ScrollTrigger plugin
-  gsap.registerPlugin(ScrollTrigger);
 
-  // Header animations
-  gsap.from(".logo", {
-      y: -50,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out"
-  });
+    gsap.registerPlugin(ScrollTrigger);
 
-  gsap.from(".nav-item", {
-      y: -30,
-      opacity: 0,
-      duration: 0.8,
-      stagger: 0.1,
-      ease: "power2.out"
-  });
+// Hero section animations
+gsap.from(".hero-text h1", {
+  y: 50,
+  opacity: 0,
+  duration: 0.6,
+  ease: "power3.out"
+});
 
-  // Hero section animations
-  gsap.from(".hero-text h1", {
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out"
-  });
+gsap.from(".hero-text h2", {
+  y: 50,
+  opacity: 0,
+  duration: 0.6,
+  delay: 0.3,
+  ease: "power3.out"
+});
 
-  gsap.from(".hero-text h2", {
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      delay: 0.3,
-      ease: "power3.out"
-  });
+gsap.from(".hero-text p", {
+  y: 50,
+  opacity: 0,
+  duration: 0.6,
+  delay: 0.6,
+  ease: "power3.out"
+});
 
-  gsap.from(".hero-text p", {
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      delay: 0.6,
-      ease: "power3.out"
-  });
-
-  gsap.from(".hero-buttons .btn", {
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      delay: 0.9,
-      stagger: 0.2,
-      ease: "power3.out"
-  });
+// gsap.from(".hero-buttons a", {
+//   y: 50,
+//   opacity: 0,
+//   duration: 1,
+//   delay: 0.9,
+//   stagger: 0.2,
+//   ease: "power3.out"
+// });
 
   // Search and filter animations
   gsap.from(".search-filter-container", {
       y: 30,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.6,
       scrollTrigger: {
           trigger: ".courses-section",
           start: "top 80%",
@@ -69,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
       gsap.from(header, {
           y: 50,
           opacity: 0,
-          duration: 1,
+          duration: 0.6,
           scrollTrigger: {
               trigger: header,
               start: "top 80%",
@@ -83,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
       gsap.from(card, {
           y: 100,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.6,
           delay: i * 0.1,
           scrollTrigger: {
               trigger: card,
@@ -151,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
       gsap.from(card, {
           y: 50,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.6,
           delay: i * 0.2,
           scrollTrigger: {
               trigger: card,
@@ -225,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
   gsap.from(".cta-container h2", {
       y: 30,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.6,
       delay: 0.2,
       scrollTrigger: {
           trigger: ".cta-section",
@@ -237,7 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
   gsap.from(".cta-container p", {
       y: 30,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.6,
       delay: 0.4,
       scrollTrigger: {
           trigger: ".cta-section",
@@ -249,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function() {
   gsap.from(".cta-buttons .btn", {
       y: 30,
       opacity: 0,
-      duration: 0.8,
+      duration: 0.6,
       delay: 0.6,
       stagger: 0.2,
       scrollTrigger: {
@@ -263,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function() {
   gsap.from(".footer-column", {
       y: 50,
       opacity: 0,
-      duration: 1,
+      duration: 0.6,
       stagger: 0.2,
       scrollTrigger: {
           trigger: ".footer",
@@ -431,7 +415,7 @@ document.addEventListener('DOMContentLoaded', function() {
       gsap.from(paragraph, {
           y: 20,
           opacity: 0,
-          duration: 0.8,
+          duration: 0.6,
           scrollTrigger: {
               trigger: paragraph,
               start: "top 90%",
