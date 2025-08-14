@@ -47,7 +47,7 @@ website.use(session({
     resave: false,  // Important: should be false
     saveUninitialized: false,  // Important: should be false
     store: MongoStore.create({
-        mongoUrl: "mongodb://localhost:27017/Education",
+        mongoUrl: "mongodb+srv://Raj:Rajaryan@cluster0.crfzpz6.mongodb.net/education?retryWrites=true&w=majority&appName=Cluster0",
         collectionName: 'sessions',
         ttl: 14 * 24 * 60 * 60, // 14 days
         autoRemove: 'interval',
@@ -59,7 +59,7 @@ website.use(session({
         secure: false, // Set to false in development, true in production
         httpOnly: true,
         maxAge: 24 * 60 * 60 * 1000, // 24 hours
-        sameSite: 'lax' // Use 'none' in production with secure: true
+        // sameSite: 'lax' // Use 'none' in production with secure: true
     }
 }));
 
