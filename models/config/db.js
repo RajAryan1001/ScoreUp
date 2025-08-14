@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://Raj:Rajaryan@cluster0.crfzpz6.mongodb.net/Education').then(()=>{
+mongoose.connect('mongodb+srv://Raj:Rajaryan@cluster0.crfzpz6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0').then(()=>{
+
+    //
     
     console.log('connected');
 }).catch((err)=>{
