@@ -14,7 +14,6 @@ const OTP = require('./models/otp');
 const { sendOTPEmail } = require('./utils/emailService');
 const { isSuperAdmin } = require('./utils/authMiddleware');
 const { render } = require('ejs');
-const fetch = require('node-fetch');
 require('./models/config/db');
 
 const Razorpay = require('razorpay');
