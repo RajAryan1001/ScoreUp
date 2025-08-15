@@ -14,6 +14,7 @@ const OTP = require('./models/otp');
 const { sendOTPEmail } = require('./utils/emailService');
 const { isSuperAdmin } = require('./utils/authMiddleware');
 const { render } = require('ejs');
+const fetch = require('node-fetch');
 require('./models/config/db');
 
 const Razorpay = require('razorpay');
@@ -104,6 +105,16 @@ website.post('/createAdmin', async (req, res) => {
     }
 });
 
+
+website.get("/my-ip", async (req, res) => {
+  try {
+    const response = await fetch("https://ifconfig.me/ip");
+    const ip = await response.text();
+    res.send(`Your Render egress IP: ${ip}`);
+  } catch (err) {
+    res.status(500).send(`Error fetching IP: ${err}`);
+  }
+});
 
 website.post('/admin/send-otp', async (req, res) => {
 
