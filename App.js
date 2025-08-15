@@ -583,10 +583,10 @@ website.get('/greWord', (req, res) => {
 });
 
 website.get('/greSyllabus', (req, res) => {
-    res.render("testPre/Gre/GreSyllabus");
+    res.render("testPre/Gre/GreSyllabus.ejs");
 });
 website.get('/greEligibity', (req, res) => {
-    res.render("testPre/Gre/GreEligibity");
+    res.render("testPre/Gre/GreEligibity.ejs");
 });
 website.get('/greTest', (req, res) => {
     res.render("testPre/Gre/GreTest");
@@ -596,37 +596,41 @@ website.get('/greTest', (req, res) => {
 //  GMAT....
 
 website.get('/gmatOption', (req, res) => {
-    res.render("testPre/GMAT/GMat");
+    res.render("testPre/Gmat/Gmat");
 });
 
-website.get('/gmatPractice', (req, res) => {
-    res.render("testPre/GMAT/gmatPractice");
-});
-
-website.get('/gmatOnlines', (req, res) => {
-    res.render("testPre/GMAT/gmatOnline");
-});
 
 website.get('/gmatBook', (req, res) => {
-    res.render("testPre/GMAT/gmatBooks");
-});
-
-website.get('/gmatExam', (req, res) => {
-    res.render("testPre/GMAT/gmatExams");
-});
-
-website.get('/GmatSyllabus', (req, res) => {
-    res.render("testPre/GMAT/GmatSyllabus");
-});
-
-website.get('/gmatEligibity', (req, res) => {
-    res.render("testPre/GMAT/gmatEligibity");
+    res.render("testPre/Gmat/gmatBooks");
 });
 
 
 website.get('/gmatCalculator', (req, res) => {
-    res.render("testPre/GMAT/gmatCalculator");
+    res.render("testPre/Gmat/gmatCalculator");
 });
+
+
+website.get('/gmatEligibity', (req, res) => {
+    res.render("testPre/Gmat/gmatEligibity");
+});
+
+website.get('/gmatExam', (req, res) => {
+    res.render("testPre/Gmat/gmatExams");
+});
+
+
+website.get('/gmatOnlines', (req, res) => {
+    res.render("testPre/Gmat/gmatOnline");
+});
+
+website.get('/gmatPractice', (req, res) => {
+    res.render("testPre/Gmat/gmatPractice");
+});
+
+website.get('/GmatSyllabus', (req, res) => {
+    res.render("testPre/Gmat/GmatSyllabus");
+});
+
 
 //  SAT
 
@@ -655,7 +659,6 @@ website.get('/satSyllabus', (req, res) => {
     res.render("testPre/SAT/satSyllabus");
 });
 
-
 website.get('/satEligibility', (req, res) => {
     res.render("testPre/SAT/satEligibility");
 });
@@ -666,13 +669,14 @@ website.get('/satDates', (req, res) => {
 });
 
 
+// Act
 website.get('/actpre', (req, res) => {
     res.render("testPre/ACT/ActPre");
 });
 
 
 website.get('/actexam', (req, res) => {
-    res.render("testPre/ACT/ActExam");
+    res.render("testPre/ACT/ACTExam");
 });
 
 
@@ -682,16 +686,13 @@ website.get('/satvsact', (req, res) => {
 
 // IELTS...
 
-
 website.get('/ieltspre', (req, res) => {
     res.render("testPre/IELTS/IELTSPre");
 });
 
-
 website.get('/ieltsOnline', (req, res) => {
     res.render("testPre/IELTS/IELTSOnline");
 });
-
 
 website.get('/ieltsExam', (req, res) => {
     res.render("testPre/IELTS/IELTSExam");
@@ -744,7 +745,6 @@ website.get('/toeflEligibility', (req, res) => {
 website.get('/toeflPattern', (req, res) => {
     res.render("testPre/TOEFL/TOEFLPattern");
 });
-
 
 website.get('/toeflTestPre', (req, res) => {
     res.render("testPre/TOEFL/TOEFLTestPrep");
