@@ -309,7 +309,6 @@ website.get('/upcomingbooking', (req, res) => {
     res.render('UpcomingBatches');
 })
 
-
 // Handle the route for "Admin desboard",
 website.get('/myadmin', (req, res) => {
     res.render('panel/aaru');  // Render the "Home" view
@@ -318,7 +317,7 @@ website.get('/myadmin', (req, res) => {
 // Handle the route for "Contact&About Us",
 
 website.get('/contact&about', (req, res) => {
-    res.render('Contact&About')
+    res.render('Contact&About');
 })
 
 //  5.  IGCSE&IBTutoring.............
