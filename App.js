@@ -107,6 +107,16 @@ website.post('/createAdmin', async (req, res) => {
 });
 
 
+website.get("/my-ip", async (req, res) => {
+  try {
+    const response = await fetch("https://ifconfig.me/ip");
+    const ip = await response.text();
+    res.send(`Your Render egress IP: ${ip}`);
+  } catch (err) {
+    res.status(500).send(`Error fetching IP: ${err}`);
+  }
+});
+
 website.post('/admin/send-otp', async (req, res) => {
 
 
