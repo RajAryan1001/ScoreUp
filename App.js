@@ -85,6 +85,8 @@ website.get('/adminLogin', async (req, res) => {
     res.render('auth/login');
 })
 
+
+
 website.post('/createAdmin', async (req, res) => {
     try {
         const newAdmin = new Admin({
